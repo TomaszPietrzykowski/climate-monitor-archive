@@ -12,7 +12,7 @@ const ThemeToggle = () => {
           <button
             style={{ background: theme.bgPrimary, color: theme.text }}
             onClick={toggleTheme}
-            className="theme-btn"
+            className="btn btn-dark"
           >
             {btnText}
           </button>
