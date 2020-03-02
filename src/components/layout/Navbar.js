@@ -1,5 +1,6 @@
 import React from "react"
 import { ThemeContex } from "../../contexts/ThemeContext"
+import ThemeToggle from "./ThemeToggle"
 
 const Navbar = () => {
   return (
@@ -10,7 +11,7 @@ const Navbar = () => {
         return (
           <nav
             className="nav-bar"
-            style={{ backround: theme.brPrimary, color: theme.text }}
+            style={{ background: theme.bgPrimary, color: theme.text }}
           >
             <h1 className="logo">Climate Monitor</h1>
             <ul className="nav">
@@ -18,6 +19,9 @@ const Navbar = () => {
               <li>Co2</li>
               <li>Temperature</li>
               <li>About</li>
+              <li>
+                <ThemeToggle />
+              </li>
             </ul>
           </nav>
         )

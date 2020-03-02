@@ -4,13 +4,18 @@ export const ThemeContex = createContext()
 
 class ThemeContexProvider extends Component {
   state = {
-    isDarkMode: false,
-    light: { text: "#ccc", bgPrimary: "#000", bgSecondary: "#333" },
-    dark: { text: "#ccc", bgPrimary: "#ddd", bgSecondary: "#bbb" }
+    isDarkMode: true,
+    light: { text: "#444", bgPrimary: "#eee", bgSecondary: "#333" },
+    dark: { text: "#eee", bgPrimary: "#444", bgSecondary: "#bbb" }
+  }
+  toggleTheme = () => {
+    this.setState({ isDarkMode: !this.state.isDarkMode })
   }
   render() {
     return (
-      <ThemeContex.Provider value={{ ...this.state }}>
+      <ThemeContex.Provider
+        value={{ ...this.state, toggleTheme: this.toggleTheme }}
+      >
         {this.props.children}
       </ThemeContex.Provider>
     )
