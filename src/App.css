@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Exo+2&display=swap");
 
 /* Global Styles */
 :root {
@@ -16,11 +16,11 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-family: "Exo 2", sans-serif;
+  font-size: 0.9rem;
   line-height: 1.6;
-  background-color: #fff;
-  color: #333;
+  /* background-color: #fff;
+  color: #333; */
 }
 
 a {
@@ -112,7 +112,7 @@ img {
 /* Cards */
 .card {
   padding: 1rem;
-  border: #ccc 1px dotted;
+  /* border: #333 1px dotted; */
   margin: 0.7rem 0;
 }
 
