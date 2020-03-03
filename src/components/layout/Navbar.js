@@ -1,9 +1,9 @@
 import React, { useContext } from "react"
-import { ThemeContex } from "../../contexts/ThemeContext"
+import { ThemeContext } from "../../contexts/ThemeContext"
 import ThemeToggle from "./ThemeToggle"
 
 const Navbar = () => {
-  const { isDarkMode, light, dark } = useContext(ThemeContex)
+  const { isDarkMode, light, dark } = useContext(ThemeContext)
   const theme = isDarkMode ? dark : light
   return (
     <nav

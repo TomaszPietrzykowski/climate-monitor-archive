@@ -1,9 +1,9 @@
 import React from "react"
-import { ThemeContex } from "../../contexts/ThemeContext"
+import { ThemeContext } from "../../contexts/ThemeContext"
 
 const ThemeToggle = () => {
   return (
-    <ThemeContex.Consumer>
+    <ThemeContext.Consumer>
       {context => {
         const { isDarkMode, dark, light, toggleTheme } = context
         const theme = isDarkMode ? dark : light
@@ -18,7 +18,7 @@ const ThemeToggle = () => {
           </button>
         )
       }}
-    </ThemeContex.Consumer>
+    </ThemeContext.Consumer>
   )
 }
 

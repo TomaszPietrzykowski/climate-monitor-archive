@@ -1,18 +1,13 @@
-import React, { useContext } from "react"
-import { ThemeContex } from "../../../contexts/ThemeContext"
+import React, { Fragment } from "react"
+import Showcase from "../Showcase"
+import Dashboard from "../../Dashboard"
 
 const Home = () => {
-  const { isDarkMode } = useContext(ThemeContex)
-  const bg = isDarkMode
-    ? "../../../images/bgdark.jpg"
-    : "../../../images/bgdlight.jpg"
   return (
-    <div
-      className="home"
-      style={{ backgroundImage: bg, minHight: "40vh", width: "100%" }}
-    >
-      <div className="container">this is home page</div>
-    </div>
+    <Fragment>
+      <Showcase />
+      <Dashboard />
+    </Fragment>
   )
 }
 
