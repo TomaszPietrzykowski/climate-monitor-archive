@@ -11,7 +11,7 @@ const Showcase = () => {
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundSize: "cover",
-    minHeight: "200px"
+    minHeight: "300px"
   }
   return <div className="showcase" style={showcaseStyle}></div>
 }
