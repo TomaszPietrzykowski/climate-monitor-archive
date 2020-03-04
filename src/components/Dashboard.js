@@ -10,7 +10,7 @@ const Dashboard = () => {
         <div className="dashboard">
           <br />
           <br />
-          <h2>dashboard content</h2>
+          <h2>Dashboard</h2>
           <br />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,

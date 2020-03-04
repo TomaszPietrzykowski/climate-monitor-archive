@@ -12,7 +12,12 @@ const Navbar = () => {
     >
       <div className="container">
         <nav className="navbar">
-          <h1 className="logo">Climate Monitor</h1>
+          <div className="logo">
+            <h1>
+              <i className="fas fa-globe" />
+              <span style={{ paddingLeft: "0.8rem" }}>Climate Monitor</span>
+            </h1>
+          </div>
           <ul>
             <li>Home</li>
             <li>Co2</li>
