@@ -1,6 +1,7 @@
 import React, { useContext } from "react"
 import { ThemeContext } from "../../contexts/ThemeContext"
 import ThemeToggle from "./ThemeToggle"
+import UserBtn from "./UserBtn"
 
 const Navbar = () => {
   const { isDarkMode, light, dark } = useContext(ThemeContext)
@@ -22,9 +23,8 @@ const Navbar = () => {
             <li>Home</li>
             <li>Co2</li>
             <li>Temp</li>
-            <li>
-              <ThemeToggle />
-            </li>
+            <ThemeToggle />
+            <UserBtn />
           </ul>
         </nav>
       </div>

@@ -1,10 +1,10 @@
 import React, { useContext } from "react"
 import { ThemeContext } from "../../contexts/ThemeContext"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faMoon } from "@fortawesome/free-solid-svg-icons"
-import { faSun } from "@fortawesome/free-solid-svg-icons"
+import { faUser } from "@fortawesome/free-solid-svg-icons"
+import { faUserLock } from "@fortawesome/free-solid-svg-icons"
 
-const ThemeToggle = () => {
+const UserBtn = () => {
   const { isDarkMode, dark, light, toggleTheme } = useContext(ThemeContext)
   const theme = isDarkMode ? dark : light
   return (
@@ -13,12 +13,12 @@ const ThemeToggle = () => {
       onClick={toggleTheme}
     >
       {isDarkMode ? (
-        <FontAwesomeIcon icon={faSun} />
+        <FontAwesomeIcon icon={faUser} />
       ) : (
-        <FontAwesomeIcon icon={faMoon} />
+        <FontAwesomeIcon icon={faUserLock} />
       )}
     </li>
   )
 }
 
-export default ThemeToggle
+export default UserBtn
