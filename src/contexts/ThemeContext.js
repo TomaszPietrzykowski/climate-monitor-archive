@@ -13,7 +13,7 @@ class ThemeContexProvider extends Component {
     },
     dark: {
       text: "#ddd",
-      bgPrimary: "#000003",
+      bgPrimary: "#000006",
       bgSecondary: "#bbb",
       ico: "fas fa-sun"
     }

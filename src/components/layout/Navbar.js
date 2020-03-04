@@ -2,7 +2,8 @@ import React, { useContext } from "react"
 import { ThemeContext } from "../../contexts/ThemeContext"
 import ThemeToggle from "./ThemeToggle"
 import UserBtn from "./UserBtn"
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGlobeEurope } from "@fortawesome/free-solid-svg-icons"
 const Navbar = () => {
   const { isDarkMode, light, dark } = useContext(ThemeContext)
   const theme = isDarkMode ? dark : light
@@ -14,17 +15,21 @@ const Navbar = () => {
       <div className="container">
         <nav className="navbar">
           <div className="logo">
-            <h1>
-              <i className="fas fa-globe" />
+            <h2>
+              <FontAwesomeIcon icon={faGlobeEurope} />
               <span style={{ paddingLeft: "0.8rem" }}>Climate Monitor</span>
-            </h1>
+            </h2>
           </div>
           <ul>
             <li>Home</li>
             <li>Co2</li>
             <li>Temp</li>
-            <ThemeToggle />
-            <UserBtn />
+            <li>
+              <ThemeToggle />
+            </li>
+            <li>
+              <UserBtn />
+            </li>
           </ul>
         </nav>
       </div>

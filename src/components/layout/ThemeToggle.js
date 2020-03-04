@@ -8,7 +8,7 @@ const ThemeToggle = () => {
   const { isDarkMode, dark, light, toggleTheme } = useContext(ThemeContext)
   const theme = isDarkMode ? dark : light
   return (
-    <li
+    <div
       style={{ background: theme.bgPrimary, color: theme.text }}
       onClick={toggleTheme}
     >
@@ -17,7 +17,7 @@ const ThemeToggle = () => {
       ) : (
         <FontAwesomeIcon icon={faMoon} />
       )}
-    </li>
+    </div>
   )
 }
 

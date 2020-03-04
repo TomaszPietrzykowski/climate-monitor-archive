@@ -10,8 +10,12 @@ const UserBtn = () => {
   const { isLoggedIn, logIn } = useContext(AuthContext)
   const theme = isDarkMode ? dark : light
   return (
-    <li
-      style={{ background: theme.bgPrimary, color: theme.text }}
+    <div
+      style={{
+        background: theme.bgPrimary,
+        color: theme.text,
+        minWidth: "40px"
+      }}
       onClick={logIn}
     >
       {isLoggedIn ? (
@@ -19,7 +23,7 @@ const UserBtn = () => {
       ) : (
         <FontAwesomeIcon icon={faUserLock} />
       )}
-    </li>
+    </div>
   )
 }
 
