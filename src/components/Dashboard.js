@@ -1,5 +1,6 @@
 import React, { useContext } from "react"
 import { ThemeContext } from "../contexts/ThemeContext"
+import CurrentCarbon from "./CurrentCarbon"
 
 const Dashboard = () => {
   const { isDarkMode, dark, light } = useContext(ThemeContext)
@@ -10,15 +11,11 @@ const Dashboard = () => {
         <div className="dashboard">
           <br />
           <br />
-          <h2>Dashboard</h2>
+          <h2 style={{ borderBottom: `1px solid ${theme.accent}` }}>
+            Dashboard
+          </h2>
           <br />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-            facilis vero! Ipsa quos illo expedita, excepturi harum in
-            necessitatibus, quibusdam cupiditate eaque vero recusandae, ratione
-            voluptate vitae ea consectetur dignissimos autem quod atque id quam
-            at eius placeat. Pariatur, molestiae?
-          </p>
+          <CurrentCarbon />
           <br />
           <br />
           <p>
