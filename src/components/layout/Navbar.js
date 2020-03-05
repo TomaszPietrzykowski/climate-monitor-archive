@@ -10,14 +10,24 @@ const Navbar = () => {
   return (
     <div
       className="nav"
-      style={{ background: theme.bgPrimary, color: theme.text }}
+      style={{
+        background: theme.bgPrimary,
+        color: theme.text
+      }}
     >
       <div className="container">
         <nav className="navbar">
           <div className="logo">
             <h2>
               <FontAwesomeIcon icon={faGlobeEurope} />
-              <span style={{ paddingLeft: "0.8rem" }}>Climate Monitor</span>
+              <span
+                style={{
+                  paddingLeft: "0.8rem",
+                  fontFamily: "Exo 2, sans-serif"
+                }}
+              >
+                Climate Monitor
+              </span>
             </h2>
           </div>
           <ul>

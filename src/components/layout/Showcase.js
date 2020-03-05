@@ -26,18 +26,25 @@ const Showcase = () => {
   const showcaseInfoStyle = {
     borderLeft: `15px solid ${theme.accent}`,
     padding: "1rem 4rem 1rem 1.5rem",
-    marginBottom: "2rem",
     background: `${theme.showcaseInfoBg}`,
-    color: "rgba(255,255,255,1)"
+    color: "rgba(255,255,255,1)",
+    fontFamily: '"Spartan", sans-serif'
   }
   return (
     <div className="showcase" style={showcaseStyle}>
       <div className="container" style={showcaseContainerStyle}>
         <div className="showcase-info" style={showcaseInfoStyle}>
-          <h2 style={{ marginBottom: "0.7rem" }}>
+          <h2
+            style={{
+              marginBottom: "0.7rem",
+              letterSpacing: "0.2rem"
+            }}
+          >
             LATEST AND HISTORICAL CLIMATE DATA
           </h2>
-          <p>from N.O.A.A and N.A.S.A public database</p>
+          <p style={{ fontSize: "1.2rem" }}>
+            from NOAA's and NASA's public database
+          </p>
         </div>
       </div>
     </div>

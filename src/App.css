@@ -2,7 +2,7 @@
 
 /* Currently imported fonts:
 /* Exo 2
-/* Spartan
+/* Spartan  
 */
 
 /* Global Styles */
@@ -21,7 +21,7 @@
 }
 
 body {
-  font-family: "Spartan", sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 0.9rem;
   line-height: 1.6;
   /* background-color: #fff;
@@ -390,13 +390,17 @@ table th {
 .navbar .welcome span {
   margin-right: 0.6rem;
 }
-
+.showcase-info {
+  margin-bottom: 2rem;
+}
 /* Mobile Styles */
 @media (max-width: 700px) {
   .hide-sm {
     display: none;
   }
-
+  .showcase-info {
+    margin-bottom: 0;
+  }
   .grid-2,
   .grid-3,
   .grid-4 {

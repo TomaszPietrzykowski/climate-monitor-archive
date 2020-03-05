@@ -16,7 +16,7 @@ class ThemeContexProvider extends Component {
       text: "#ddd",
       bgPrimary: "#000006",
       bgSecondary: "#bbb",
-      accent: "rgba(102, 0, 34, 1)",
+      accent: "rgba(153, 0, 51, 1)",
       showcaseInfoBg: "rgba(0,0,0,0.82)"
     }
   }
