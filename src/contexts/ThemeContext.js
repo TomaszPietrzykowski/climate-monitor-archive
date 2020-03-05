@@ -8,14 +8,14 @@ class ThemeContexProvider extends Component {
     light: {
       text: "#333",
       bgPrimary: "#eee",
-      bgSecondary: "#333",
+      bgSecondary: "rgb(225, 225, 255)",
       accent: "#0d0",
       showcaseInfoBg: "rgba(0,0,0,0.6)"
     },
     dark: {
       text: "#ddd",
       bgPrimary: "#000006",
-      bgSecondary: "#bbb",
+      bgSecondary: "rgba(10,10,20,1)",
       accent: "rgba(153, 0, 51, 1)",
       showcaseInfoBg: "rgba(0,0,0,0.82)"
     }
