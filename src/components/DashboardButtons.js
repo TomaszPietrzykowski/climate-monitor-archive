@@ -20,21 +20,14 @@ const DashboardButtons = () => {
     textAlign: "center"
   }
   const iconstyle = {
+    color: theme.accentSecondary,
     fontSize: "2.5rem",
     marginBottom: "1rem"
   }
-  const activeBtn = () => {
-    btnstyle = {
-      background: theme.bgPrimary,
-      margin: "1rem",
-      padding: "1rem",
-      textAlign: "center",
-      border: "1px solid #0d0"
-    }
-  }
+
   return (
     <div style={liststyle}>
-      <div onMouseOver={activeBtn} style={btnstyle}>
+      <div style={btnstyle}>
         <h1 style={iconstyle}>
           <FontAwesomeIcon icon={faGlobeEurope} />
         </h1>
@@ -82,6 +75,14 @@ const DashboardButtons = () => {
           <FontAwesomeIcon icon={faGlobeEurope} />
         </h1>
         <h4>N A S A</h4>
+        <br />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div style={btnstyle}>
+        <h1 style={iconstyle}>
+          <FontAwesomeIcon icon={faGlobeEurope} />
+        </h1>
+        <h4>News</h4>
         <br />
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>

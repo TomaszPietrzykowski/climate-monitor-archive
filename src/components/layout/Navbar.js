@@ -34,6 +34,8 @@ const Navbar = () => {
             <li>Home</li>
             <li>Co2</li>
             <li>Temp</li>
+            <li>More</li>
+            <li>News</li>
             <li>
               <ThemeToggle />
             </li>
