@@ -9,13 +9,15 @@ class ThemeContexProvider extends Component {
       text: "#333",
       bgPrimary: "#eee",
       bgSecondary: "#333",
-      ico: "fas fa-moon"
+      accent: "#0d0",
+      showcaseInfoBg: "rgba(0,0,0,0.55)"
     },
     dark: {
       text: "#ddd",
       bgPrimary: "#000006",
       bgSecondary: "#bbb",
-      ico: "fas fa-sun"
+      accent: "rgba(102, 0, 34, 1)",
+      showcaseInfoBg: "rgba(0,0,0,0.82)"
     }
   }
   toggleTheme = () => {

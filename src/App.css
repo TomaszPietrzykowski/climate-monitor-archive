@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Exo+2&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo+2|Spartan&display=swap");
+
+/* Currently imported fonts:
+/* Exo 2
+/* Spartan
+*/
 
 /* Global Styles */
 :root {
@@ -16,7 +21,7 @@
 }
 
 body {
-  font-family: "Exo 2", sans-serif;
+  font-family: "Spartan", sans-serif;
   font-size: 0.9rem;
   line-height: 1.6;
   /* background-color: #fff;
