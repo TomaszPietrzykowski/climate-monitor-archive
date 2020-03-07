@@ -12,7 +12,8 @@ const Navbar = () => {
       className="nav"
       style={{
         background: theme.bgPrimary,
-        color: theme.text
+        color: theme.text,
+        paddingBottom: "0.3rem"
       }}
     >
       <div className="container">

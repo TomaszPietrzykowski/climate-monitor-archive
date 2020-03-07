@@ -7,8 +7,8 @@ class ThemeContexProvider extends Component {
     isDarkMode: false,
     light: {
       text: "#333",
-      bgPrimary: "#eee",
-      bgSecondary: "rgb(225, 225, 255)",
+      bgPrimary: "rgba(255, 255, 255, 1)",
+      bgSecondary: "rgba(245, 245, 245, 1)",
       accent: "#0d0",
       accentSecondary: "rgba(0, 184, 230,1)",
       showcaseInfoBg: "rgba(0,0,0,0.6)",
@@ -16,7 +16,7 @@ class ThemeContexProvider extends Component {
     },
     dark: {
       text: "#ddd",
-      bgPrimary: "#000006",
+      bgPrimary: "#000",
       bgSecondary: "rgba(10,10,20,1)",
       accent: "rgba(153, 0, 51, 1)",
       accentSecondary: "rgba(255, 64, 0,1)",

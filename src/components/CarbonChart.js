@@ -21,7 +21,7 @@ const CarbonChart = () => {
   return (
     <div
       className="chart"
-      style={{ dislpay: "flex", flexDirection: "row", color: "rgb(255,255,0)" }}
+      style={{ dislpay: "flex", flexDirection: "row", margin: "2rem" }}
     >
       <Line data={chartData} height="400vh" options={chartOptions} />
     </div>

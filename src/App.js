@@ -14,8 +14,8 @@ function App() {
         <ThemeContexProvider>
           <Navbar />
           <CarbonContexProvider>
-            <Home />
             <Carbon />
+            <Home />
           </CarbonContexProvider>
         </ThemeContexProvider>
       </AuthContexProvider>
