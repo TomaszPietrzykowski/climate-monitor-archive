@@ -5,6 +5,7 @@ import Home from "./components/layout/pages/Home"
 import ThemeContexProvider from "./contexts/ThemeContext"
 import AuthContexProvider from "./contexts/AuthContext"
 import CarbonContexProvider from "./contexts/CarbonContext"
+import Carbon from "./components/layout/pages/Carbon"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Navbar />
           <CarbonContexProvider>
             <Home />
+            <Carbon />
           </CarbonContexProvider>
         </ThemeContexProvider>
       </AuthContexProvider>

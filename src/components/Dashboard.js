@@ -2,7 +2,6 @@ import React, { useContext } from "react"
 import { ThemeContext } from "../contexts/ThemeContext"
 import CurrentCarbon from "./CurrentCarbon"
 import DashboardButtons from "./DashboardButtons"
-import CarbonChart from "./CarbonChart"
 
 const Dashboard = () => {
   const { isDarkMode, dark, light } = useContext(ThemeContext)
@@ -26,7 +25,6 @@ const Dashboard = () => {
           <DashboardButtons />
           <br />
           <br />
-          <CarbonChart />
         </div>
 
         <br />

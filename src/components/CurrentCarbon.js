@@ -14,18 +14,22 @@ const CurrentCarbon = () => {
       >
         <div>
           <h4>Current atmosferic CO2:</h4>
+          <br />
           <h2> 414.17 ppm</h2>
         </div>
         <div>
           <h4>Corresponding reading 1 y/a:</h4>
+          <br />
           <h2>409.48 ppm</h2>
         </div>
         <div>
           <h4>Corresponding reading 10 y/a:</h4>
+          <br />
           <h2>379.23 ppm</h2>
         </div>
         <div>
           <h4>Current atmosferic CH4:</h4>
+          <br />
           <h2> 1876 ppb</h2>
         </div>
         <script
