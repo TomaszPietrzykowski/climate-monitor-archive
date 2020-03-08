@@ -6,7 +6,7 @@ import { Line } from "react-chartjs-2"
 const CarbonChart = () => {
   const { isDarkMode, dark, light } = useContext(ThemeContext)
   const theme = isDarkMode ? dark : light
-  const { labels, values } = useContext(CarbonContext).yearlyCarbon
+  const { labels, values } = useContext(CarbonContext).fullRecordCarbon
   const chartData = canvas => {
     const ctx = canvas.getContext("2d")
     const gradient = ctx.createLinearGradient(0, 500, 0, 100)
