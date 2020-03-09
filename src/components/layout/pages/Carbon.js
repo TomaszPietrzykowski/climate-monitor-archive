@@ -2,6 +2,7 @@ import React, { useContext } from "react"
 import { ThemeContext } from "../../../contexts/ThemeContext"
 import CarbonChart from "../../CarbonChart"
 import CarbonMenu from "../../CarbonMenu"
+import CarbonChartSlider from "../../CarbonChartSlider"
 
 const Carbon = () => {
   const { isDarkMode, dark, light } = useContext(ThemeContext)
@@ -28,6 +29,7 @@ const Carbon = () => {
           >
             Carbon Dioxide CO2
           </h2>
+          <CarbonChartSlider />
           <CarbonChart />
         </div>
       </div>
