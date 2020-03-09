@@ -6,7 +6,7 @@ import { Line } from "react-chartjs-2"
 const CarbonChart = () => {
   const { isDarkMode, dark, light } = useContext(ThemeContext)
   const theme = isDarkMode ? dark : light
-  const { labels, values } = useContext(CarbonContext).fullRecordCarbon
+  const { labels, values, title } = useContext(CarbonContext).activeChartData
   const chartData = canvas => {
     const ctx = canvas.getContext("2d")
     const gradient = ctx.createLinearGradient(0, 500, 0, 100)
@@ -17,7 +17,7 @@ const CarbonChart = () => {
       labels: labels,
       datasets: [
         {
-          label: "ATMOSPHERIC CO2: ANNUAL AVERAGE",
+          label: title,
           data: values,
           backgroundColor: gradient
         }
@@ -28,7 +28,12 @@ const CarbonChart = () => {
   return (
     <div
       className="chart"
-      style={{ dislpay: "flex", flexDirection: "row", margin: "2rem" }}
+      style={{
+        dislpay: "flex",
+        flexDirection: "row",
+        margin: "2rem",
+        padding: "2rem"
+      }}
     >
       <Line data={chartData} height="400" options={chartOptions} />
     </div>

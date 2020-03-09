@@ -481,6 +481,11 @@ class CarbonContexProvider extends Component {
         408.52,
         411.44
       ]
+    },
+    activeChartData: {
+      labels: ["wiosna", "lato", "jesien", "zima"],
+      values: [6, 5, 3, 4],
+      title: "Activa chart valu sectin of context called"
     }
   }
 
