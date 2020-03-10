@@ -5,7 +5,7 @@ const CarbonMenu = () => {
   const { isDarkMode, dark, light } = useContext(ThemeContext)
   const theme = isDarkMode ? dark : light
   const carbonBtnStyle = {
-    fontSize: "1.1rem",
+    fontSize: "1rem",
     padding: "1rem 3rem",
     margin: "1px"
   }
@@ -18,10 +18,10 @@ const CarbonMenu = () => {
   //   }
   const carbonBtnStyleHoover = {
     fontSize: "1.1rem",
-    padding: "1rem 3rem",
-    margin: "1px",
+    padding: "0.5rem 3rem",
+    margin: "1.5px",
     background: `${theme.bgSecondary}`,
-    borderLeft: `15px solid ${theme.accent}`,
+    borderLeft: `12px solid ${theme.accent}`,
     color: `${theme.accentSecondary}`
   }
   return (

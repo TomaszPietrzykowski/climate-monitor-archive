@@ -19,7 +19,7 @@ const CarbonChartSlider = () => {
         className="header"
         style={{ marginBottom: "2rem", textAlign: "center" }}
       >
-        <h2>{activeChartData.title}</h2>
+        <h3>{activeChartData.title}</h3>
       </div>
 
       <div

@@ -15,27 +15,29 @@ const Carbon = () => {
         borderTop: `1px solid ${theme.text}`
       }}
     >
-      <div style={{ display: "flex", marginTop: "1.5rem" }}>
-        <div style={{ flex: "1", marginTop: "2rem" }}>
-          <CarbonMenu />
+      <div className="container">
+        <div style={{ display: "flex", marginTop: "1.5rem" }}>
+          <div style={{ flex: "1", marginTop: "2rem" }}>
+            <CarbonMenu />
+          </div>
+          <div style={{ flex: "3" }}>
+            <h2
+              style={{
+                borderBottom: `1px solid ${theme.accent}`,
+                paddingBottom: "0.5rem",
+                margin: "2rem 2rem 4rem 2rem"
+              }}
+            >
+              Carbon Dioxide CO2
+            </h2>
+            <CarbonChartSlider />
+            <CarbonChart />
+          </div>
         </div>
-        <div style={{ flex: "3" }}>
-          <h2
-            style={{
-              borderBottom: `1px solid ${theme.accent}`,
-              paddingBottom: "0.5rem",
-              margin: "2rem 2rem 4rem 2rem"
-            }}
-          >
-            Carbon Dioxide CO2
-          </h2>
-          <CarbonChartSlider />
-          <CarbonChart />
-        </div>
+        <br />
+        <br />
+        <br />
       </div>
-      <br />
-      <br />
-      <br />
     </div>
   )
 }
