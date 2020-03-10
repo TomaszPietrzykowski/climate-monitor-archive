@@ -1,12 +1,12 @@
 import React, { useContext } from "react"
-import { CarbonContext } from "../contexts/CarbonContext"
+import { ChartContext } from "../contexts/ChartContext"
 import { ThemeContext } from "../contexts/ThemeContext"
 import { Line } from "react-chartjs-2"
 
 const CarbonChart = () => {
   const { isDarkMode, dark, light } = useContext(ThemeContext)
   const theme = isDarkMode ? dark : light
-  const { labels, values, title } = useContext(CarbonContext).outputChartData
+  const { labels, values, title } = useContext(ChartContext).outputChartData
   const chartData = canvas => {
     const ctx = canvas.getContext("2d")
     const gradient = ctx.createLinearGradient(0, 500, 0, 100)
@@ -31,7 +31,7 @@ const CarbonChart = () => {
       style={{
         dislpay: "flex",
         flexDirection: "row",
-        margin: "2rem",
+        margin: "1rem",
         padding: "2rem"
       }}
     >

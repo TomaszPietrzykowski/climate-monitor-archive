@@ -1,12 +1,11 @@
 import React, { useContext, useState } from "react"
 import InputRange from "react-input-range"
 import "./CarbonChartSlider.css"
-import { CarbonContext } from "../contexts/CarbonContext"
+import { ChartContext } from "../contexts/ChartContext"
 
 const CarbonChartSlider = () => {
-  const { activeChartData, updateActiveValues } = useContext(CarbonContext)
+  const { activeChartData, updateActiveValues } = useContext(ChartContext)
 
-  // const updateChart = (value) => {
   let initialRange = { min: 0, max: activeChartData.labels.length }
   const [value, setValue] = useState({ min: 0, max: initialRange.max })
   const updateZoom = value => {

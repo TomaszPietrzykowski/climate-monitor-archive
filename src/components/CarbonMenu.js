@@ -1,5 +1,6 @@
 import React, { useContext } from "react"
 import { ThemeContext } from "../contexts/ThemeContext"
+import { DatabaseContext } from "../contexts/DatabaseContext"
 
 const CarbonMenu = () => {
   const { isDarkMode, dark, light } = useContext(ThemeContext)
@@ -9,6 +10,8 @@ const CarbonMenu = () => {
     padding: "1rem 3rem",
     margin: "1px"
   }
+  const { yearlyCarbon } = useContext(DatabaseContext)
+
   //   const carbonBtnStyleHoover = {
   //     fontSize: "1.1rem",
   //     padding: "1rem 3rem",

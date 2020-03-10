@@ -1,8 +1,8 @@
 import React, { Component, createContext } from "react"
 
-export const CarbonContext = createContext()
+export const ChartContext = createContext()
 
-class CarbonContexProvider extends Component {
+class ChartContexProvider extends Component {
   state = {
     fullRecordCarbon: {
       labels: [
@@ -758,13 +758,13 @@ class CarbonContexProvider extends Component {
   }
   render() {
     return (
-      <CarbonContext.Provider
+      <ChartContext.Provider
         value={{ ...this.state, updateActiveValues: this.updateActiveValues }}
       >
         {this.props.children}
-      </CarbonContext.Provider>
+      </ChartContext.Provider>
     )
   }
 }
 
-export default CarbonContexProvider
+export default ChartContexProvider
