@@ -19,8 +19,11 @@ const CarbonChartSlider = () => {
       style={{ padding: "1rem 2.5rem", margin: "1.5rem" }}
     >
       <InputRange
-        maxValue={initialRange.max}
+        maxValue={initialRange.max - 1}
         minValue={0}
+        formatLabel={value =>
+          `${activeChartData.labels[value - 1] || activeChartData.labels[0]}`
+        }
         value={value}
         onChange={value => updateZoom(value)}
       />

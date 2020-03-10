@@ -544,7 +544,9 @@ class CarbonContexProvider extends Component {
         2016,
         2017,
         2018,
-        2019
+        2018,
+        2018,
+        999
       ],
       values: [
         315.97,
@@ -608,7 +610,8 @@ class CarbonContexProvider extends Component {
         406.55,
         408.52,
         411.44
-      ]
+      ],
+      title: "Active chart data title"
     },
     outputChartData: {
       labels: [
