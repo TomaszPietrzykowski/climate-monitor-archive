@@ -24,7 +24,7 @@ const CarbonChartSlider = () => {
 
       <div
         style={{
-          padding: "1rem 4.5rem 1rem 3.5rem",
+          padding: "1rem 3.5rem 1rem 3.5rem",
           display: "flex"
         }}
       >

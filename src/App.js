@@ -6,19 +6,22 @@ import ThemeContexProvider from "./contexts/ThemeContext"
 import AuthContexProvider from "./contexts/AuthContext"
 import CarbonContexProvider from "./contexts/CarbonContext"
 import Carbon from "./components/layout/pages/Carbon"
+import DatabaseContexProvider from "./contexts/DatabaseContext"
 
 function App() {
   return (
     <div className="App">
-      <AuthContexProvider>
-        <ThemeContexProvider>
-          <Navbar />
-          <CarbonContexProvider>
-            <Carbon />
-            <Home />
-          </CarbonContexProvider>
-        </ThemeContexProvider>
-      </AuthContexProvider>
+      <DatabaseContexProvider>
+        <AuthContexProvider>
+          <ThemeContexProvider>
+            <Navbar />
+            <CarbonContexProvider>
+              <Carbon />
+              <Home />
+            </CarbonContexProvider>
+          </ThemeContexProvider>
+        </AuthContexProvider>
+      </DatabaseContexProvider>
     </div>
   )
 }
