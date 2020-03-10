@@ -14,19 +14,36 @@ const CarbonChartSlider = () => {
     updateActiveValues(value)
   }
   return (
-    <div
-      className="slider"
-      style={{ padding: "1rem 2.5rem", margin: "1.5rem" }}
-    >
-      <InputRange
-        maxValue={initialRange.max - 1}
-        minValue={0}
-        formatLabel={value =>
-          `${activeChartData.labels[value - 1] || activeChartData.labels[0]}`
-        }
-        value={value}
-        onChange={value => updateZoom(value)}
-      />
+    <div>
+      <div
+        className="header"
+        style={{ marginBottom: "2rem", textAlign: "center" }}
+      >
+        <h2>{activeChartData.title}</h2>
+      </div>
+
+      <div
+        style={{
+          padding: "1rem 4.5rem 1rem 3.5rem",
+          display: "flex"
+        }}
+      >
+        <div className="label" style={{ flex: "1" }}>
+          <h4>Data range:</h4>
+        </div>
+        <div className="slider" style={{ flex: "6", paddingTop: "0.3rem" }}>
+          <InputRange
+            maxValue={initialRange.max - 1}
+            minValue={0}
+            formatLabel={value =>
+              `${activeChartData.labels[value - 1] ||
+                activeChartData.labels[0]}`
+            }
+            value={value}
+            onChange={value => updateZoom(value)}
+          />
+        </div>
+      </div>
     </div>
   )
 }
