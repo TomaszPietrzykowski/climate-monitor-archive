@@ -1,7 +1,7 @@
 .input-range__slider {
   appearance: none;
-  background: #b5ad3f;
-  border: 1px solid #45cf0f;
+  background: #0000ff;
+  border: 1px solid #00f;
   border-radius: 100%;
   cursor: pointer;
   display: block;
@@ -88,7 +88,7 @@
 }
 
 .input-range__track--active {
-  background: #d10e70;
+  background: #00f;
 }
 
 .input-range {

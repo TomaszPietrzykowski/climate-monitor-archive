@@ -13,9 +13,9 @@ class ThemeContexProvider extends Component {
       accentSecondary: "rgba(0, 184, 230,1)",
       showcaseInfoBg: "rgba(0,0,0,0.6)",
       chartColor: [
-        "rgba(255, 0, 0, 1)",
-        "rgba(0, 0, 255, 1)",
-        "rgba(0, 255, 0, 1)"
+        "rgba(255, 0, 0, 0.1)",
+        "rgba(0, 0, 255, 0.5)",
+        "rgba(0, 255, 0, 0.9)"
       ]
     },
     dark: {

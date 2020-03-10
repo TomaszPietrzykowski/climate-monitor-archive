@@ -7,7 +7,10 @@ const CarbonChartSlider = () => {
   const { activeChartData, updateActiveValues } = useContext(ChartContext)
 
   let initialRange = { min: 0, max: activeChartData.labels.length }
-  const [value, setValue] = useState({ min: 0, max: initialRange.max })
+  const [value, setValue] = useState({
+    min: 0,
+    max: initialRange.max - 1
+  })
   const updateZoom = value => {
     setValue(value)
     updateActiveValues(value)
@@ -32,7 +35,7 @@ const CarbonChartSlider = () => {
         </div>
         <div className="slider" style={{ flex: "6", paddingTop: "0.3rem" }}>
           <InputRange
-            maxValue={initialRange.max - 1}
+            maxValue={activeChartData.labels.length}
             minValue={0}
             formatLabel={value =>
               `${activeChartData.labels[value - 1] ||

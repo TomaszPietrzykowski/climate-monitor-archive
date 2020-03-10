@@ -350,10 +350,45 @@ class DatabaseContexProvider extends Component {
         400.78,
         403.57,
         405.66
-      ]
+      ],
+      title: "Atmospheric CO2 full ice-core readings range"
     },
-    daylyCarbon: [],
-    weeklyCarbon: [],
+    dailyCarbon: {
+      labels: [
+        1959,
+        1960,
+        1961,
+        1962,
+        1963,
+        1964,
+        1965,
+        1966,
+        1967,
+        1968,
+        1969,
+        1970
+      ],
+      values: [
+        335.4,
+        336.84,
+        338.75,
+        340.11,
+        341.45,
+        343.05,
+        344.65,
+        346.12,
+        347.42,
+        349.19,
+        351.57,
+        353.12
+      ],
+      title: "Atmospheric CO2 modern times daily radings"
+    },
+    weeklyCarbon: {
+      labels: [1959, 1960, 1961, 1962, 1963, 1964, 1965],
+      values: [335.4, 336.84, 338.75, 340.11, 341.45, 343.05, 344.65],
+      title: "Atmospheric CO2 weekly average"
+    },
     yearlyCarbon: {
       labels: [
         1959,
@@ -480,7 +515,8 @@ class DatabaseContexProvider extends Component {
         406.55,
         408.52,
         411.44
-      ]
+      ],
+      title: "Atmospheric CO2 yearly average"
     }
   }
 
