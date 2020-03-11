@@ -6,7 +6,8 @@ import { Line } from "react-chartjs-2"
 const CarbonChart = () => {
   const { isDarkMode, dark, light } = useContext(ThemeContext)
   const theme = isDarkMode ? dark : light
-  const { labels, values, title } = useContext(ChartContext).outputChartData
+  const { labels, values } = useContext(ChartContext).outputChartData
+  // const { title } = useContext(ChartContext).activeChartData
   const chartData = canvas => {
     const ctx = canvas.getContext("2d")
     const gradient = ctx.createLinearGradient(0, 500, 0, 100)
@@ -17,14 +18,17 @@ const CarbonChart = () => {
       labels: labels,
       datasets: [
         {
-          label: title,
+          label: "working label",
           data: values,
           backgroundColor: gradient
         }
       ]
     }
   }
-  const chartOptions = { maintainAspectRatio: false }
+  const chartOptions = {
+    maintainAspectRatio: false,
+    legend: { display: false }
+  }
   return (
     <div
       className="chart"

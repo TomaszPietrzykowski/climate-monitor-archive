@@ -1,10 +1,8 @@
-import React, { useContext, useState } from "react"
+import React, { useContext, useState, useEffect } from "react"
 import { ThemeContext } from "../../../contexts/ThemeContext"
 import { ChartContext } from "../../../contexts/ChartContext"
 import { DatabaseContext } from "../../../contexts/DatabaseContext"
 import CarbonMenu from "../../CarbonMenu"
-// import FullCarbonChart from "../../FullCarbonChart"
-// import WeeklyCarbonChart from "../../WeeklyCarbonChart"
 import CarbonChartSlider from "../../CarbonChartSlider"
 import CarbonChart from "../../CarbonChart"
 
@@ -29,8 +27,8 @@ const Carbon = () => {
         : tab === "weekly"
         ? weeklyCarbon
         : dailyCarbon
-    setActiveChartData(data)
     setActiveTab({ tab })
+    setActiveChartData(data)
   }
   return (
     <div
