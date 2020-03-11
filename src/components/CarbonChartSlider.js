@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react"
+import React, { useContext, useState, useEffect } from "react"
 import InputRange from "react-input-range"
 import "./CarbonChartSlider.css"
 import { ChartContext } from "../contexts/ChartContext"
@@ -11,6 +11,10 @@ const CarbonChartSlider = () => {
     min: 0,
     max: activeChartData.labels.length
   })
+  useEffect(() => {
+    setValue({ min: 0, max: activeChartData.labels.length })
+  }, [activeChartData])
+  const initialRange = activeChartData.labels.length
   const updateZoom = value => {
     const data = {
       min: value.min < 0 ? 0 : value.min,
@@ -56,13 +60,13 @@ const CarbonChartSlider = () => {
         </div>
         <div className="slider" style={{ flex: "6", paddingTop: "0.3rem" }}>
           <InputRange
-            maxValue={activeChartData.length - 1}
+            maxValue={initialRange}
             minValue={0}
             formatLabel={value =>
               `${activeChartData[value - 1] || activeChartData[0]}`
             }
             value={value}
-            onChange={value => updateZoom(value)}
+            onChange={value => setValue(value)}
           />
         </div>
       </div>
