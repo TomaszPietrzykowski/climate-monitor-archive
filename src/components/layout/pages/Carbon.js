@@ -3,8 +3,8 @@ import { ThemeContext } from "../../../contexts/ThemeContext"
 import { ChartContext } from "../../../contexts/ChartContext"
 import { DatabaseContext } from "../../../contexts/DatabaseContext"
 import CarbonMenu from "../../CarbonMenu"
-import CarbonChartSlider from "../../CarbonChartSlider"
-import CarbonChart from "../../CarbonChart"
+import FullCarbonChart from "../../FullCarbonChart"
+import WeeklyCarbonChart from "../../WeeklyCarbonChart"
 
 const Carbon = () => {
   const {
@@ -19,7 +19,6 @@ const Carbon = () => {
   const { setActiveChartData } = useContext(ChartContext)
   const setTab = e => {
     const tab = e.target.id
-    setActiveTab(tab)
     const data =
       tab === "full"
         ? fullRecordCarbon
@@ -28,7 +27,9 @@ const Carbon = () => {
         : tab === "weekly"
         ? weeklyCarbon
         : dailyCarbon
+    console.log(data)
     setActiveChartData(data)
+    setActiveTab({ tab })
   }
   return (
     <div
@@ -53,8 +54,7 @@ const Carbon = () => {
             >
               Carbon Dioxide CO2
             </h2>
-            <CarbonChartSlider />
-            <CarbonChart />
+            {activeTab === "full" ? <FullCarbonChart /> : <WeeklyCarbonChart />}
           </div>
         </div>
         <br />
