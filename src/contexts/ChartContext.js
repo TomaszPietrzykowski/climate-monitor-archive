@@ -265,15 +265,18 @@ class ChartContexProvider extends Component {
     }
   }
   setActiveChartData = data => {
-    console.log(data)
     this.setState({ activeChartData: data, outputChartData: data })
-    console.log(this.state.activeChartData)
-    console.log(this.state.outputChartData)
   }
-  updateActiveValues = newData => {
-    this.setState({
-      outputChartData: newData
-    })
+  updateActiveValues = range => {
+    const initialLabels = [...this.state.activeChartData.labels]
+    const initialValues = [...this.state.activeChartData.values]
+    const outputLabels = initialLabels.slice(range.min, range.max)
+    const outputValues = initialValues.slice(range.min, range.max)
+    const newData = {
+      labels: outputLabels,
+      values: outputValues
+    }
+    this.setState({ outputChartData: newData })
   }
   render() {
     return (
