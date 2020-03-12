@@ -12,6 +12,7 @@ const CarbonChartSlider = () => {
   const initialRange = activeChartData.labels.length
   useEffect(() => {
     updateActiveValues(value)
+    //eslint-disable-next-line
   }, [value])
   useEffect(() => {
     setValue({ min: 0, max: activeChartData.labels.length })
