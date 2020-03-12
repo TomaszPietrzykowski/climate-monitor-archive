@@ -9,12 +9,12 @@ const CarbonChartSlider = () => {
     min: 0,
     max: activeChartData.labels.length
   })
-  const initialRange = value.max
+  const initialRange = activeChartData.labels.length
   useEffect(() => {
     updateActiveValues(value)
   }, [value])
   useEffect(() => {
-    setValue({ min: 0, max: activeChartData.labels.length - 1 })
+    setValue({ min: 0, max: activeChartData.labels.length })
   }, [activeChartData])
   console.log(initialRange)
   console.log(value)
