@@ -21,6 +21,7 @@ const CarbonMenu = ({ active, setTab }) => {
     fontSize: "1.1rem",
     padding: "0.5rem 3rem",
     margin: "1.5px",
+    cursor: "pointer",
     "&:hover": {
       background: `${theme.bgSecondary}`,
       borderLeft: `12px solid ${theme.accent}`,
