@@ -2,10 +2,10 @@ import React, { useContext, useState } from "react"
 import { ThemeContext } from "../../../contexts/ThemeContext"
 import { ChartContext } from "../../../contexts/ChartContext"
 import { DatabaseContext } from "../../../contexts/DatabaseContext"
-import CarbonMenu from "../../CarbonMenu"
-import CarbonChartSlider from "../../CarbonChartSlider"
-import CarbonChart from "../../CarbonChart"
-import SectionHeader from "../../SectionHeader"
+import CarbonMenu from "../../Carbon/CarbonMenu"
+import CarbonChartSlider from "../../Carbon/CarbonChartSlider"
+import CarbonChart from "../../Carbon/CarbonChart"
+import SectionHeader from "../SectionHeader"
 
 const Carbon = () => {
   const {

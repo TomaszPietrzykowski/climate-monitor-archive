@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from "react"
 import InputRange from "react-input-range"
 import "./CarbonChartSlider.css"
-import { ChartContext } from "../contexts/ChartContext"
+import { ChartContext } from "../../contexts/ChartContext"
 
 const CarbonChartSlider = () => {
   const { activeChartData, updateActiveValues } = useContext(ChartContext)

@@ -1,6 +1,6 @@
 import React, { useContext } from "react"
-import { ThemeContext } from "../contexts/ThemeContext"
-import CurrentCarbon from "./CurrentCarbon"
+import { ThemeContext } from "../../contexts/ThemeContext"
+import CurrentCarbon from "../Carbon/CurrentCarbon"
 import DashboardButtons from "./DashboardButtons"
 
 const Dashboard = () => {

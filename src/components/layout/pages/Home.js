@@ -1,6 +1,6 @@
 import React, { Fragment } from "react"
 import Showcase from "../Showcase"
-import Dashboard from "../../Dashboard"
+import Dashboard from "../../Dashboard/Dashboard"
 
 const Home = () => {
   return (
