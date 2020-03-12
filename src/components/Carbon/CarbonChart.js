@@ -19,7 +19,9 @@ const CarbonChart = () => {
         {
           label: "Atmospheric CO2 (ppm)",
           data: values,
-          backgroundColor: gradient
+          backgroundColor: gradient,
+          borderColor: theme.chartColor[2],
+          borderWidth: 2
         }
       ]
     }
