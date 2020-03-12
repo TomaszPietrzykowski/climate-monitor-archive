@@ -24,7 +24,10 @@ const CarbonChart = () => {
       ]
     }
   }
-  const chartOptions = { maintainAspectRatio: false }
+  const chartOptions = {
+    maintainAspectRatio: false,
+    legend: { display: false }
+  }
   return (
     <div
       className="chart"

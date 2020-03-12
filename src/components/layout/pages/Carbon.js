@@ -48,18 +48,8 @@ const Carbon = () => {
             <CarbonMenu active={activeTab} setTab={setTab} />
           </div>
           <div style={{ flex: "3" }}>
-            <h2
-              style={{
-                borderBottom: `1px solid ${theme.accent}`,
-                paddingBottom: "0.5rem",
-                margin: "2rem 2rem 4rem 2rem"
-              }}
-            >
-              Carbon Dioxide CO2
-            </h2>
             <CarbonChartSlider />
             <CarbonChart />
-            {/* {activeTab === "full" ? <FullCarbonChart /> : <WeeklyCarbonChart />} */}
           </div>
         </div>
         <br />
