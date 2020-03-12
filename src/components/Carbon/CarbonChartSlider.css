@@ -67,7 +67,7 @@
 }
 
 .input-range__track {
-  background: #eeeeee;
+  background: rgba(125, 125, 125, 0.2);
   border-radius: 0.3rem;
   cursor: pointer;
   display: block;

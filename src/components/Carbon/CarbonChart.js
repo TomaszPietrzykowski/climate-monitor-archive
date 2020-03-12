@@ -17,7 +17,7 @@ const CarbonChart = () => {
       labels: labels,
       datasets: [
         {
-          label: "working label",
+          label: "Atmospheric CO2 (ppm)",
           data: values,
           backgroundColor: gradient
         }
@@ -26,7 +26,7 @@ const CarbonChart = () => {
   }
   const chartOptions = {
     maintainAspectRatio: false,
-    legend: { display: false }
+    legend: { display: true }
   }
   return (
     <div

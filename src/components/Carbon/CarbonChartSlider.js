@@ -2,15 +2,8 @@ import React, { useContext, useState, useEffect } from "react"
 import InputRange from "react-input-range"
 import "./CarbonChartSlider.css"
 import { ChartContext } from "../../contexts/ChartContext"
-import { ThemeContext } from "../../contexts/ThemeContext"
 
 const CarbonChartSlider = () => {
-  const { isDarkMode } = useContext(ThemeContext)
-  const [dark, setDark] = useState(false)
-  console.log(dark)
-  useEffect(() => {
-    setDark(isDarkMode)
-  }, [isDarkMode])
   const { activeChartData, updateActiveValues } = useContext(ChartContext)
   const [value, setValue] = useState({
     min: 0,
