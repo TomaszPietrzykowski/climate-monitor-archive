@@ -4,11 +4,12 @@ import { ThemeContext } from "../contexts/ThemeContext"
 const CarbonMenu = ({ active, setTab }) => {
   const { isDarkMode, dark, light } = useContext(ThemeContext)
   const theme = isDarkMode ? dark : light
-  // const carbonBtnStyle = {
-  //   fontSize: "1rem",
-  //   padding: "1rem 3rem",
-  //   margin: "1px"
-  // }
+
+  const carbonBtnStyle = {
+    fontSize: "1.1rem",
+    padding: "1rem 3rem",
+    margin: "1px"
+  }
 
   //   const carbonBtnStyleHoover = {
   //     fontSize: "1.1rem",
