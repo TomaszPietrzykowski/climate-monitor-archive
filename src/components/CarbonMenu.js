@@ -8,7 +8,8 @@ const CarbonMenu = ({ active, setTab }) => {
   const carbonBtnStyle = {
     fontSize: "1.1rem",
     padding: "1rem 3rem",
-    margin: "1px"
+    margin: "1px",
+    background: `${theme.bgPrimary}`
   }
   return (
     <div>

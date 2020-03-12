@@ -709,7 +709,6 @@ class ChartContexProvider extends Component {
   updateActiveValues = range => {
     const initialLabels = [...this.state.activeChartData.labels]
     const initialValues = [...this.state.activeChartData.values]
-    const title = this.state.activeChartData.title
     const outputLabels = initialLabels.slice(range.min, range.max)
     const outputValues = initialValues.slice(range.min, range.max)
     const newData = {
