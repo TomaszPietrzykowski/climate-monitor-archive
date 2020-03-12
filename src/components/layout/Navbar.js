@@ -14,7 +14,7 @@ const Navbar = () => {
       style={{
         background: theme.bgPrimary,
         color: theme.text,
-        paddingBottom: "0.3rem"
+        padding: "0.3rem 0rem"
       }}
     >
       <div className="container">
@@ -25,7 +25,7 @@ const Navbar = () => {
               <span
                 style={{
                   paddingLeft: "0.8rem",
-                  fontFamily: "Exo 2, sans-serif"
+                  fontFamily: "Spartan, sans-serif"
                 }}
               >
                 CLIMATE MONITOR
