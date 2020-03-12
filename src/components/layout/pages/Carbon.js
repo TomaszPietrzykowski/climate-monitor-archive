@@ -28,7 +28,7 @@ const Carbon = () => {
         : tab === "weekly"
         ? weeklyCarbon
         : dailyCarbon
-    setActiveTab({ tab })
+    setActiveTab(tab)
     setActiveChartData(data)
   }
   return (

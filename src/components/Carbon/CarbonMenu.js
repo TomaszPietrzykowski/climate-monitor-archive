@@ -1,34 +1,80 @@
 import React, { useContext } from "react"
+import "./CarbonMenu.css"
 import { ThemeContext } from "../../contexts/ThemeContext"
 
 const CarbonMenu = ({ active, setTab }) => {
-  const { isDarkMode, dark, light } = useContext(ThemeContext)
-  const theme = isDarkMode ? dark : light
-
-  const carbonBtnStyle = {
-    fontSize: "1.1rem",
-    padding: "1rem 3rem",
-    margin: "1px",
-    background: `${theme.bgPrimary}`
-  }
+  const { isDarkMode } = useContext(ThemeContext)
+  const theme = isDarkMode ? "dark" : "light"
   return (
     <div>
-      <div id={"full"} style={carbonBtnStyle} onClick={setTab}>
+      <div
+        id={"full"}
+        className={
+          active === "full" ? `${theme}activebtn` : `${theme}passivebtn`
+        }
+        onClick={setTab}
+      >
         Full ice-core data
       </div>
-      <div id={"yearly"} style={carbonBtnStyle} onClick={setTab}>
+      <div
+        id={"yearly"}
+        className={
+          active === "yearly" ? `${theme}activebtn` : `${theme}passivebtn`
+        }
+        onClick={setTab}
+      >
         Annual average
       </div>
-      <div id={"weekly"} style={carbonBtnStyle} onClick={setTab}>
+      <div
+        id={"weekly"}
+        className={
+          active === "weekly" ? `${theme}activebtn` : `${theme}passivebtn`
+        }
+        onClick={setTab}
+      >
         Weekly average
       </div>
-      <div id={"latest"} style={carbonBtnStyle} onClick={setTab}>
+      <div
+        id={"latest"}
+        className={
+          active === "latest" ? `${theme}activebtn` : `${theme}passivebtn`
+        }
+        onClick={setTab}
+      >
         Daily readings
       </div>
-      <div style={carbonBtnStyle}>Ocean CO2</div>
-      <div style={carbonBtnStyle}>Keeling curve</div>
-      <div style={carbonBtnStyle}>Compare factors</div>
-      <div style={carbonBtnStyle}>News</div>
+      <div
+        id={"oceanco2"}
+        className={
+          active === "oceanco2" ? `${theme}activebtn` : `${theme}passivebtn`
+        }
+      >
+        Ocean CO2
+      </div>
+      <div
+        id={"keeling"}
+        className={
+          active === "keeling" ? `${theme}activebtn` : `${theme}passivebtn`
+        }
+      >
+        Keeling curve
+      </div>
+      <div
+        id={"compare"}
+        className={
+          active === "keeling" ? `${theme}activebtn` : `${theme}passivebtn`
+        }
+      >
+        Compare factors
+      </div>
+      <div
+        id={"carbonnews"}
+        className={
+          active === "carbonnews" ? `${theme}activebtn` : `${theme}passivebtn`
+        }
+      >
+        News
+      </div>
     </div>
   )
 }

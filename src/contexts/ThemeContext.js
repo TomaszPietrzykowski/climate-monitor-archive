@@ -20,7 +20,7 @@ class ThemeContexProvider extends Component {
     },
     dark: {
       text: "#ddd",
-      bgPrimary: "#000",
+      bgPrimary: "rgba(0, 0, 0, 1)",
       bgSecondary: "rgba(10,10,20,1)",
       accent: "rgba(153, 0, 51, 1)",
       accentSecondary: "rgba(255, 64, 0,1)",
