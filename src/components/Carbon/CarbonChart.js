@@ -21,7 +21,7 @@ const CarbonChart = () => {
           data: values,
           backgroundColor: gradient,
           borderColor: theme.chartColor[2],
-          borderWidth: 2
+          borderWidth: 2.5
         }
       ]
     }
