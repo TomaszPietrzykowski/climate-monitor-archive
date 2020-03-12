@@ -1,4 +1,5 @@
 import React, { useContext } from "react"
+import { Link } from "react-router-dom"
 import { ThemeContext } from "../../contexts/ThemeContext"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGlobeEurope } from "@fortawesome/free-solid-svg-icons"
@@ -27,17 +28,19 @@ const DashboardButtons = () => {
 
   return (
     <div style={liststyle}>
-      <div style={btnstyle}>
-        <h1 style={iconstyle}>
-          <FontAwesomeIcon icon={faGlobeEurope} />
-        </h1>
-        <h4>Cabon Dioxide CO2</h4>
-        <br />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-          pariatur aut.
-        </p>
-      </div>
+      <Link to="/co2" style={{ color: theme.text }}>
+        <div style={btnstyle}>
+          <h1 style={iconstyle}>
+            <FontAwesomeIcon icon={faGlobeEurope} />
+          </h1>
+          <h4>Cabon Dioxide CO2</h4>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            pariatur aut.
+          </p>
+        </div>
+      </Link>
       <div style={btnstyle}>
         <h1 style={iconstyle}>
           <FontAwesomeIcon icon={faGlobeEurope} />

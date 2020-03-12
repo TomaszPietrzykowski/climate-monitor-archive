@@ -1,4 +1,5 @@
 import React, { useContext } from "react"
+import { Link } from "react-router-dom"
 import { ThemeContext } from "../../contexts/ThemeContext"
 import ThemeToggle from "./ThemeToggle"
 import UserBtn from "./UserBtn"
@@ -27,16 +28,24 @@ const Navbar = () => {
                   fontFamily: "Exo 2, sans-serif"
                 }}
               >
-                Climate Monitor
+                CLIMATE MONITOR
               </span>
             </h2>
           </div>
           <ul>
-            <li>Home</li>
-            <li>Co2</li>
-            <li>Temp</li>
-            <li>More</li>
-            <li>News</li>
+            <li>
+              <Link to="/" style={{ color: theme.text }}>
+                HOME
+              </Link>
+            </li>
+            <li>
+              <Link to="/co2" style={{ color: theme.text }}>
+                CO2
+              </Link>
+            </li>
+            <li>TEMP</li>
+            <li>MORE</li>
+            <li>NEWS</li>
             <li>
               <ThemeToggle />
             </li>
