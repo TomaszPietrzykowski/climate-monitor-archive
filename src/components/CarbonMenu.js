@@ -18,17 +18,17 @@ const CarbonMenu = ({ active, setTab }) => {
   //     background: `${theme.bgSecondary}`,
   //     borderLeft: `15px solid ${theme.accent}`
   //   }
-  const carbonBtnStyle = {
-    fontSize: "1.1rem",
-    padding: "0.5rem 3rem",
-    margin: "1.5px",
-    cursor: "pointer",
-    "&:hover": {
-      background: `${theme.bgSecondary}`,
-      borderLeft: `12px solid ${theme.accent}`,
-      color: `${theme.accentSecondary}`
-    }
-  }
+  // const carbonBtnStyle = {
+  //   fontSize: "1.1rem",
+  //   padding: "0.5rem 3rem",
+  //   margin: "1.5px",
+  //   cursor: "pointer",
+  //   "&:hover": {
+  //     background: `${theme.bgSecondary}`,
+  //     borderLeft: `12px solid ${theme.accent}`,
+  //     color: `${theme.accentSecondary}`
+  //   }
+  // }
   // const carbonBtnStyleHoover = {
   //   fontSize: "1.1rem",
   //   padding: "0.5rem 3rem",
