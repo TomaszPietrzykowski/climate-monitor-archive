@@ -5,7 +5,7 @@ const CarbonMenu = ({ setTab }) => {
   const { isDarkMode, dark, light } = useContext(ThemeContext)
   const theme = isDarkMode ? dark : light
   const carbonBtnStyle = {
-    fontSize: "1rem",
+    fontSize: "1.1rem",
     padding: "1rem 3rem",
     margin: "1px"
   }
@@ -33,7 +33,7 @@ const CarbonMenu = ({ setTab }) => {
       <div id={"yearly"} style={carbonBtnStyle} onClick={setTab}>
         Annual average
       </div>
-      <div id={"weekly"} style={carbonBtnStyleHoover} onClick={setTab}>
+      <div id={"weekly"} style={carbonBtnStyle} onClick={setTab}>
         Weekly average
       </div>
       <div id={"latest"} style={carbonBtnStyle} onClick={setTab}>
