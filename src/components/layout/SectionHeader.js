@@ -5,7 +5,7 @@ const SectionHeader = ({ title }) => {
   const { isDarkMode, dark, light } = useContext(ThemeContext)
   const theme = isDarkMode ? dark : light
   return (
-    <h1
+    <h2
       style={{
         borderBottom: `1px solid ${theme.accent}`,
         paddingBottom: "0.5rem",
@@ -13,7 +13,7 @@ const SectionHeader = ({ title }) => {
       }}
     >
       {title}
-    </h1>
+    </h2>
   )
 }
 
