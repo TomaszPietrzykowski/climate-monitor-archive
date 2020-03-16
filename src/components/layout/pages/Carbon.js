@@ -58,7 +58,7 @@ const Carbon = () => {
         <br />
         <br />
         <br />
-        <div style={{ minHeight: "50vh" }}></div>
+        <div style={{ minHeight: "50vh", background: theme.bgPrimary }}></div>
       </div>
     </div>
   )
