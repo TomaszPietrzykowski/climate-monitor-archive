@@ -3,6 +3,7 @@ import { ThemeContext } from "../../../contexts/ThemeContext"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
 import "./MobileMenus.css"
+import { Link } from "react-router-dom"
 
 const CarbonFloatBtn = ({ setTab }) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -31,7 +32,11 @@ const CarbonFloatBtn = ({ setTab }) => {
         </div>
       </div>
       {isOpen && (
-        <div className="carbonmobilemenu">
+        <div
+          className="carbonmobilemenu"
+          style={{ background: theme.bgPrimary }}
+        >
+          <div className="mobilemenuheader">Carbon Dioxide CO2</div>
           <div id={"full"} className="mobilemenubtn" onClick={switchData}>
             Full ice-core data
           </div>
@@ -55,6 +60,9 @@ const CarbonFloatBtn = ({ setTab }) => {
           </div>
           <div id={"carbonnews"} className="mobilemenubtn">
             News
+          </div>
+          <div id={"carbonnews"} className="mobilemenuheader">
+            <Link to="/">Home</Link>
           </div>
         </div>
       )}
