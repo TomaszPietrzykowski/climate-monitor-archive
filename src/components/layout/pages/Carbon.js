@@ -7,6 +7,7 @@ import CarbonChartSlider from "../../Carbon/CarbonChartSlider"
 import CarbonChart from "../../Carbon/CarbonChart"
 import SectionHeader from "../SectionHeader"
 import "./Carbon.css"
+import CarbonFloatBtn from "../mobilemenus/CarbonFloatBtn"
 
 const Carbon = () => {
   const {
@@ -49,6 +50,7 @@ const Carbon = () => {
           <div style={{ flex: "3" }}>
             <CarbonChartSlider />
             <CarbonChart />
+            <CarbonFloatBtn setTab={setTab} />
           </div>
         </div>
         <br />

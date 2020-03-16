@@ -1,0 +1,53 @@
+/* Floating Button Styles */
+
+.floatbtn {
+  position: fixed;
+  margin: 0 3rem 3rem 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 100%;
+  z-index: 999;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.iconcontainer {
+  border-radius: 100%;
+  padding: 1rem;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.iconcontainer:hover {
+  opacity: 0.6;
+}
+
+/* Mobile Menu Styles */
+
+.carbonmobilemenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+}
+
+.mobilemenubtn {
+  padding: 0.3rem;
+}
+
+@media (min-width: 980px) {
+  /* Floating Button Styles */
+
+  .floatbtn,
+  .iconcontainer,
+  .carbonmobilemenu,
+  .mobilemenubtn {
+    display: none;
+  }
+}
