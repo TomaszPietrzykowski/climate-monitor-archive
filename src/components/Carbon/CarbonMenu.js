@@ -1,5 +1,5 @@
 import React, { useContext } from "react"
-import "./CarbonMenu.css"
+import "../layout/pages/Carbon.css"
 import { ThemeContext } from "../../contexts/ThemeContext"
 
 const CarbonMenu = ({ active, setTab }) => {

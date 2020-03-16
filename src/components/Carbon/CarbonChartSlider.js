@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from "react"
 import InputRange from "react-input-range"
-import "./CarbonChartSlider.css"
+import "../layout/pages/Carbon.css"
 import { ChartContext } from "../../contexts/ChartContext"
 
 const CarbonChartSlider = () => {
@@ -21,23 +21,11 @@ const CarbonChartSlider = () => {
   console.log(value)
   return (
     <div>
-      <div
-        className="header"
-        style={{ marginBottom: "2rem", textAlign: "center" }}
-      >
-        <h3>{activeChartData.title}</h3>
-      </div>
+      <div className="chartheader">{activeChartData.title}</div>
 
-      <div
-        style={{
-          padding: "1rem 3.5rem 1rem 3.5rem",
-          display: "flex"
-        }}
-      >
-        <div className="label" style={{ flex: "1" }}>
-          <h4>Data range:</h4>
-        </div>
-        <div className="slider" style={{ flex: "6", paddingTop: "0.3rem" }}>
+      <div className="slidercontainer">
+        <div className="sliderlabel">Data range:</div>
+        <div className="slider">
           <InputRange
             maxValue={initialRange}
             minValue={0}

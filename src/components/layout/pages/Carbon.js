@@ -6,6 +6,7 @@ import CarbonMenu from "../../Carbon/CarbonMenu"
 import CarbonChartSlider from "../../Carbon/CarbonChartSlider"
 import CarbonChart from "../../Carbon/CarbonChart"
 import SectionHeader from "../SectionHeader"
+import "./Carbon.css"
 
 const Carbon = () => {
   const {
@@ -42,7 +43,7 @@ const Carbon = () => {
       <div className="container">
         <SectionHeader title={"Carbon Dioxide CO2"} />
         <div style={{ display: "flex", marginTop: "1.5rem" }}>
-          <div style={{ flex: "1", marginTop: "2rem" }}>
+          <div className="carbonmenu">
             <CarbonMenu active={activeTab} setTab={setTab} />
           </div>
           <div style={{ flex: "3" }}>

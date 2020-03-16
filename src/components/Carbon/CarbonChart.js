@@ -2,6 +2,7 @@ import React, { useContext } from "react"
 import { ChartContext } from "../../contexts/ChartContext"
 import { ThemeContext } from "../../contexts/ThemeContext"
 import { Line } from "react-chartjs-2"
+import "../layout/pages/Carbon.css"
 
 const CarbonChart = () => {
   const { isDarkMode, dark, light } = useContext(ThemeContext)
@@ -27,20 +28,13 @@ const CarbonChart = () => {
     }
   }
   const chartOptions = {
+    responsive: true,
     maintainAspectRatio: false,
     legend: { display: true }
   }
   return (
-    <div
-      className="chart"
-      style={{
-        dislpay: "flex",
-        flexDirection: "row",
-        margin: "1rem",
-        padding: "2rem"
-      }}
-    >
-      <Line data={chartData} height={400} options={chartOptions} />
+    <div className="carbonchart">
+      <Line data={chartData} options={chartOptions} />
     </div>
   )
 }

@@ -1,0 +1,239 @@
+/* General Styles */
+
+/* Section Header Styles */
+
+.sectionheader {
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  margin: 3rem 2rem 4rem 2rem;
+}
+
+/* Chart Header Styles */
+
+.chartheader {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Carbon Menu Styles */
+
+.lightactivebtn {
+  font-size: 0.9rem;
+  padding: 0.7rem 3rem;
+  margin: 1px;
+  background: rgba(255, 255, 255, 1);
+  border-left: 12px solid rgba(0, 255, 0, 1);
+  color: rgba(0, 184, 230, 1);
+}
+.lightpassivebtn {
+  font-size: 0.9rem;
+  padding: 0.7rem 3rem;
+  margin: 1px;
+  background: rgba(255, 255, 255, 1);
+}
+.lightpassivebtn:hover {
+  font-size: 0.9rem;
+  padding: 0.7rem 3rem;
+  margin: 1px;
+  background: rgba(235, 235, 235, 1);
+  cursor: pointer;
+}
+.darkactivebtn {
+  font-size: 0.9rem;
+  padding: 0.7rem 3rem;
+  margin: 1px;
+  background: rgba(0, 0, 0, 1);
+  border-left: 12px solid rgba(153, 0, 51, 1);
+  color: rgba(255, 64, 0, 1);
+}
+.darkpassivebtn {
+  font-size: 0.9rem;
+  padding: 0.7rem 3rem;
+  margin: 1px;
+  background: rgba(0, 0, 0, 1);
+}
+.darkpassivebtn:hover {
+  font-size: 0.9rem;
+  padding: 0.7rem 3rem;
+  margin: 1px;
+  background: rgba(10, 10, 20, 1);
+  cursor: pointer;
+}
+
+.carbonmenu {
+  flex: 1;
+  margin-top: 2rem;
+}
+
+/* Carbon Chart Slider Styles */
+
+.slidercontainer {
+  display: flex;
+  padding: 1rem 3.5rem;
+}
+
+.sliderlabel {
+  flex: 1;
+  font-weight: bold;
+  padding: 0.3rem;
+}
+
+.slider {
+  flex: 5;
+  padding: 0.3rem 0.5rem;
+}
+
+/* Native React-Inut-Range Styles */
+
+.input-range__slider {
+  appearance: none;
+  background: rgba(125, 125, 125, 1);
+  border: 1px solid rgba(125, 125, 125, 1);
+  border-radius: 100%;
+  cursor: pointer;
+  display: block;
+  height: 1rem;
+  margin-left: -0.5rem;
+  margin-top: -0.65rem;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  width: 1rem;
+}
+.input-range__slider:active {
+  transform: scale(1.3);
+}
+.input-range__slider:focus {
+  box-shadow: 0 0 0 5px rgba(63, 81, 181, 0.2);
+}
+.input-range--disabled .input-range__slider {
+  background: #cccccc;
+  border: 1px solid #cccccc;
+  box-shadow: none;
+  transform: none;
+}
+
+.input-range__slider-container {
+  transition: left 0.3s ease-out;
+}
+
+.input-range__label {
+  color: #aaaaaa;
+  font-family: "Helvetica Neue", san-serif;
+  font-size: 0.8rem;
+  transform: translateZ(0);
+  white-space: nowrap;
+}
+
+.input-range__label--min,
+.input-range__label--max {
+  bottom: -1.4rem;
+  position: absolute;
+}
+
+.input-range__label--min {
+  left: 0;
+}
+
+.input-range__label--max {
+  right: 0;
+}
+
+.input-range__label--value {
+  position: absolute;
+  top: -1.8rem;
+}
+
+.input-range__label-container {
+  left: -50%;
+  position: relative;
+}
+.input-range__label--max .input-range__label-container {
+  left: 50%;
+}
+
+.input-range__track {
+  background: rgba(125, 125, 125, 0.2);
+  border-radius: 0.3rem;
+  cursor: pointer;
+  display: block;
+  height: 0.3rem;
+  position: relative;
+  transition: left 0.3s ease-out, width 0.3s ease-out;
+}
+.input-range--disabled .input-range__track {
+  background: #eeeeee;
+}
+
+.input-range__track--background {
+  left: 0;
+  margin-top: -0.15rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.input-range__track--active {
+  background: rgba(125, 125, 125, 1);
+}
+
+.input-range {
+  height: 1rem;
+  position: relative;
+  width: 100%;
+}
+/*# sourceMappingURL=index.css.map */
+
+/* Carbon Chart Styles */
+
+.carbonchart {
+  position: relative;
+  height: 70vh;
+  margin: 1rem;
+  padding: 1rem 2rem;
+}
+
+/* MOBILE */
+
+@media (max-width: 980px) {
+  .carbonmenu {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .sectionheader {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .chartheader {
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+  }
+
+  .slidercontainer {
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
+
+  .sliderlabel {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  .carbonchart {
+    height: 60vh;
+    margin: 1rem;
+    padding: 0;
+  }
+}
