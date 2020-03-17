@@ -30,7 +30,7 @@ const DashboardButtons = () => {
           </h1>
           <h4>Cabon Dioxide CO2</h4>
           <br />
-          <p>Latest and ice-core data, Keeling Curve, CO2 news and more.</p>
+          <p>Latest and ice-core data, Keeling Curve and more.</p>
         </div>
       </Link>
 
@@ -96,7 +96,7 @@ const DashboardButtons = () => {
         </h1>
         <h4>About Data</h4>
         <br />
-        <p>ClimateMonitor.info backend. Data sources and process methods</p>
+        <p>Climate Monitor backend. Data sources and process methods</p>
       </div>
       <div className="dashboardbtn" style={{ background: theme.bgPrimary }}>
         <h1 className="dashbooardicon" style={{ color: theme.accentSecondary }}>
