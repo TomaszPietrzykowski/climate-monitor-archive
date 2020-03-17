@@ -30,10 +30,7 @@ const DashboardButtons = () => {
           </h1>
           <h4>Cabon Dioxide CO2</h4>
           <br />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            pariatur aut.
-          </p>
+          <p>Latest and ice-core data, Keeling Curve, CO2 news and more.</p>
         </div>
       </Link>
 
@@ -43,7 +40,7 @@ const DashboardButtons = () => {
         </h1>
         <h4>Temperatures</h4>
         <br />
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Full range air and ocean temperatures data</p>
       </div>
       <div className="dashboardbtn" style={{ background: theme.bgPrimary }}>
         <h1 className="dashbooardicon" style={{ color: theme.accentSecondary }}>
@@ -51,7 +48,7 @@ const DashboardButtons = () => {
         </h1>
         <h4>Sea Levels</h4>
         <br />
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Sea levels and increase rate charts</p>
       </div>
       <div className="dashboardbtn" style={{ background: theme.bgPrimary }}>
         <h1 className="dashbooardicon" style={{ color: theme.accentSecondary }}>
@@ -59,7 +56,7 @@ const DashboardButtons = () => {
         </h1>
         <h4>Methane CH4</h4>
         <br />
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>All availaible data on atmospheric Methane</p>
       </div>
       <div className="dashboardbtn" style={{ background: theme.bgPrimary }}>
         <h1 className="dashbooardicon" style={{ color: theme.accentSecondary }}>
@@ -67,7 +64,7 @@ const DashboardButtons = () => {
         </h1>
         <h4>Atmospheric N2O</h4>
         <br />
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Significant climate factor. All range data charted.</p>
       </div>
       <div className="dashboardbtn" style={{ background: theme.bgPrimary }}>
         <h1 className="dashbooardicon" style={{ color: theme.accentSecondary }}>
@@ -75,7 +72,7 @@ const DashboardButtons = () => {
         </h1>
         <h4>Compare Factors</h4>
         <br />
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Choose climate factors to compare and analize interdependencies.</p>
       </div>
       <div className="dashboardbtn" style={{ background: theme.bgPrimary }}>
         <h1 className="dashbooardicon" style={{ color: theme.accentSecondary }}>
@@ -83,7 +80,7 @@ const DashboardButtons = () => {
         </h1>
         <h4>N A S A</h4>
         <br />
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Eye on the planet. Relax with NASA API's</p>
       </div>
       <div className="dashboardbtn" style={{ background: theme.bgPrimary }}>
         <h1 className="dashbooardicon" style={{ color: theme.accentSecondary }}>
@@ -91,7 +88,7 @@ const DashboardButtons = () => {
         </h1>
         <h4>News</h4>
         <br />
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Latest climate news feed.</p>
       </div>
       <div className="dashboardbtn" style={{ background: theme.bgPrimary }}>
         <h1 className="dashbooardicon" style={{ color: theme.accentSecondary }}>
@@ -99,7 +96,7 @@ const DashboardButtons = () => {
         </h1>
         <h4>About Data</h4>
         <br />
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>ClimateMonitor.info backend. Data sources and process methods</p>
       </div>
       <div className="dashboardbtn" style={{ background: theme.bgPrimary }}>
         <h1 className="dashbooardicon" style={{ color: theme.accentSecondary }}>
@@ -107,7 +104,7 @@ const DashboardButtons = () => {
         </h1>
         <h4>Join Community</h4>
         <br />
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Take action against climate change</p>
       </div>
     </div>
   )
