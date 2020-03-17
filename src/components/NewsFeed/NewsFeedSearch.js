@@ -1,9 +1,33 @@
-import React from "react"
+import React, { useState } from "react"
 
-const NewsFeedSearch = () => {
+const NewsFeedSearch = ({ setQuerry }) => {
+  const [text, setText] = useState("")
+  const handleSubmit = e => {
+    setQuerry(text)
+    setText("")
+    e.preventDefault()
+  }
+  const handleChange = e => {
+    setText(e.target.value)
+    console.log(text)
+  }
   return (
     <div>
-      <h1>News Feed Search Component</h1>
+      <form className="form" onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="text"
+          placeholder="Search News..."
+          value={text}
+          onChange={handleChange}
+        />
+        <input
+          style={{ border: "1px solid black" }}
+          type="submit"
+          value="Search"
+          className="submitbtn btn btn-block"
+        />
+      </form>
     </div>
   )
 }

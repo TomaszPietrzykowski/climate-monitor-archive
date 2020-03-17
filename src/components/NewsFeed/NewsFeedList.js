@@ -1,11 +1,19 @@
 import React from "react"
+import NewsThumbnail from "./NewsThumbnail"
 
 const NewsFeedList = ({ news }) => {
   return (
-    <ul>
-      <h2>{news[1].title}</h2>
-      <p>{news[1].content}</p>
-    </ul>
+    <div className="newsfeedlist">
+      {news.map(art => (
+        <NewsThumbnail
+          url={art.url}
+          img={art.urlToImage}
+          title={art.title}
+          description={art.description}
+          content={art.content}
+        />
+      ))}
+    </div>
   )
 }
 

@@ -2,7 +2,6 @@ import React, { useContext } from "react"
 import { ThemeContext } from "../../contexts/ThemeContext"
 import imgDark from "../../images/bgdark.jpg"
 import imgLight from "../../images/bglight.jpg"
-import "../layout/pages/Home.css"
 
 const Showcase = () => {
   const { isDarkMode, light, dark } = useContext(ThemeContext)
