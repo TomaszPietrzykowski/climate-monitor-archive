@@ -3,6 +3,7 @@ import { ThemeContext } from "../../contexts/ThemeContext"
 import SectionHeader from "../layout/SectionHeader"
 import CurrentCarbon from "../Carbon/CurrentCarbon"
 import DashboardButtons from "./DashboardButtons"
+import "../layout/pages/Home.css"
 
 const Dashboard = () => {
   const { isDarkMode, dark, light } = useContext(ThemeContext)
