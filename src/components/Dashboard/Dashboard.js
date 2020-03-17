@@ -1,5 +1,6 @@
 import React, { useContext } from "react"
 import { ThemeContext } from "../../contexts/ThemeContext"
+import SectionHeader from "../layout/SectionHeader"
 import CurrentCarbon from "../Carbon/CurrentCarbon"
 import DashboardButtons from "./DashboardButtons"
 
@@ -10,24 +11,10 @@ const Dashboard = () => {
     <div style={{ background: theme.bgPrimary, color: theme.text }}>
       <div className="container">
         <div className="dashboard">
-          <br />
-          <br />
-          <h2
-            style={{
-              borderBottom: `1px solid ${theme.accent}`,
-              paddingBottom: "0.5rem"
-            }}
-          >
-            Dashboard
-          </h2>
-          <br />
+          <SectionHeader title={"Dashboard"} />
           <CurrentCarbon />
           <DashboardButtons />
-          <br />
-          <br />
         </div>
-
-        <br />
       </div>
     </div>
   )

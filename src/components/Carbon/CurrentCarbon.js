@@ -1,42 +1,34 @@
 import React from "react"
+import "../layout/pages/Home.css"
 
 const CurrentCarbon = () => {
   return (
     <div>
-      <div
-        className="my-2"
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          textAlign: "center"
-        }}
-      >
-        <div>
-          <h4>Current atmosferic CO2:</h4>
+      <div className="currentbtncontaner">
+        <div className="currentbtn">
+          <h4>
+            Current
+            <br /> atmospheric CO2:
+          </h4>
           <br />
           <h2> 414.17 ppm</h2>
         </div>
-        <div>
-          <h4>Corresponding reading 1 y/a:</h4>
+        <div className="currentbtn">
+          <h4>
+            Corresponding reading
+            <br /> 1 year ago:
+          </h4>
           <br />
           <h2>409.48 ppm</h2>
         </div>
-        <div>
-          <h4>Corresponding reading 10 y/a:</h4>
+        <div className="currentbtn">
+          <h4>
+            Corresponding reading
+            <br /> 10 years ago:
+          </h4>
           <br />
           <h2>379.23 ppm</h2>
         </div>
-        <div>
-          <h4>Current atmosferic CH4:</h4>
-          <br />
-          <h2> 1876 ppb</h2>
-        </div>
-        <script
-          type="text/javascript"
-          src="https://www.climatelevels.org/graphs/js/co2.php?theme=grid-light&pid=2degreesinstitute"
-        ></script>
-        <div id="co2-widget-container"></div>
       </div>
     </div>
   )
