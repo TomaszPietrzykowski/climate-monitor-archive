@@ -38,7 +38,8 @@ const Carbon = () => {
       style={{
         background: theme.bgPrimary,
         color: theme.text,
-        borderTop: `1px solid ${theme.text}`
+        borderTop: `1px solid ${theme.text}`,
+        minHeight: "100vh"
       }}
     >
       <div className="container">
@@ -58,7 +59,6 @@ const Carbon = () => {
         <br />
         <br />
         <br />
-        <div style={{ minHeight: "50vh", background: theme.bgPrimary }}></div>
       </div>
     </div>
   )
