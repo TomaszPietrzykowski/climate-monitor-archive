@@ -84,6 +84,21 @@ img {
   min-width: 40px;
 }
 
+/* Loader Component Styles */
+
+.loader {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader img {
+  width: 70px;
+  height: 70px;
+}
+
 /* Mobile Styles ----------------------------------------------------- */
 @media (max-width: 720px) {
   /* Navbar */
