@@ -1,30 +1,45 @@
-import React from "react"
+import React, { useContext } from "react"
+import "../layout/pages/News.css"
+import { ThemeContext } from "../../contexts/ThemeContext"
 
 const NewsThumbnail = ({ img, url, title, description, content, source }) => {
+  const { isDarkMode, light, dark } = useContext(ThemeContext)
+  const theme = isDarkMode ? dark : light
   return (
-    <div>
+    <div
+      className="newsthumbnail"
+      style={{ background: theme.bgPrimary, color: theme.text }}
+    >
       <div
         className="thumbnailimg"
-        style={{ backgroundImage: `url(${img})`, minHeight: "200px" }}
-      ></div>
+        style={{ backgroundImage: `url(${img})` }}
+      />
       <div className="thumbnaildisplay">
         <div className="newstitle">{title}</div>
         <div className="newsdescription">{description}</div>
         <div className="newscontent">{content}</div>
-        <div className="newsinfo">
-          source: {source} powered by:{" "}
-          <a
-            href="https://newsapi.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            News API
-          </a>{" "}
+        <div className="badges">
+          <div className="poweredby">
+            powered by:{" "}
+            <a
+              href="https://newsapi.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              News API
+            </a>{" "}
+          </div>
+          <div className="newssource">source: {source}</div>
         </div>
-        <div className="newsbtn">
-          <a href={`${url}`} target="_blank" rel="noopener noreferrer">
-            READ MORE
-          </a>
+        <div className="btncontainer">
+          <div
+            className="readmorebtn"
+            style={{ background: theme.accentSecondary, color: "#fff" }}
+          >
+            <a href={`${url}`} target="_blank" rel="noopener noreferrer">
+              READ MORE
+            </a>
+          </div>
         </div>
       </div>
     </div>

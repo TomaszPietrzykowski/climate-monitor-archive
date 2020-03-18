@@ -1,13 +1,18 @@
-import React from "react"
+import React, { useContext } from "react"
 import NewsFeed from "../../NewsFeed/NewsFeed"
 import "./News.css"
 import SectionHeader from "../SectionHeader"
+import { ThemeContext } from "../../../contexts/ThemeContext"
 
 const News = () => {
+  const { isDarkMode, light, dark } = useContext(ThemeContext)
+  const theme = isDarkMode ? dark : light
   return (
-    <div className="container">
-      <SectionHeader title="Latest News:" />
-      <NewsFeed />
+    <div style={{ background: theme.bgPrimary, color: theme.text }}>
+      <div className="container">
+        <SectionHeader title="Latest News:" />
+        <NewsFeed />
+      </div>
     </div>
   )
 }

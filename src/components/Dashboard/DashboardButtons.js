@@ -80,7 +80,7 @@ const DashboardButtons = () => {
         </h1>
         <h4>N A S A</h4>
         <br />
-        <p>Eye on the planet. Relax with NASA API's</p>
+        <p>Eye on the planet. ISS, Near Earth Objects and more</p>
       </div>
       <Link to="/news" style={{ color: theme.text }}>
         <div className="dashboardbtn" style={{ background: theme.bgPrimary }}>
@@ -92,7 +92,7 @@ const DashboardButtons = () => {
           </h1>
           <h4>News</h4>
           <br />
-          <p>Latest climate news feed.</p>
+          <p>Latest climate news feed. Browse by keyword or category</p>
         </div>
       </Link>
       <div className="dashboardbtn" style={{ background: theme.bgPrimary }}>
@@ -101,7 +101,7 @@ const DashboardButtons = () => {
         </h1>
         <h4>About Data</h4>
         <br />
-        <p>Climate Monitor backend. Data sources and process methods</p>
+        <p>Climate Monitor backend. Data sources and processing methods.</p>
       </div>
       <div className="dashboardbtn" style={{ background: theme.bgPrimary }}>
         <h1 className="dashbooardicon" style={{ color: theme.accentSecondary }}>
@@ -109,7 +109,7 @@ const DashboardButtons = () => {
         </h1>
         <h4>Join Community</h4>
         <br />
-        <p>Take action against climate change</p>
+        <p>Take action against climate change.</p>
       </div>
     </div>
   )
