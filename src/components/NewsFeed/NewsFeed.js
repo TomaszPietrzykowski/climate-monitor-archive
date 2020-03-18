@@ -13,7 +13,7 @@ const NewsFeed = () => {
   const req = async querry => {
     setLoading(true)
     const res = await fetch(
-      `http://newsapi.org/v2/everything?q=${querry}&sortBy=publishedAt&apiKey=${process.env.REACT_APP_NEWSAPI_API_KEY}`
+      `http://newsapi.org/v2/everything?q=${querry}&language=en&sortBy=publishedAt&apiKey=${process.env.REACT_APP_NEWSAPI_API_KEY}`
     )
     const data = await res.json()
     setNews(data.articles)
