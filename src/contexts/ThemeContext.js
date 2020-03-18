@@ -4,7 +4,7 @@ export const ThemeContext = createContext()
 
 class ThemeContexProvider extends Component {
   state = {
-    isDarkMode: false,
+    isDarkMode: true,
     light: {
       text: "#333",
       bgPrimary: "rgba(255, 255, 255, 1)",
@@ -21,10 +21,10 @@ class ThemeContexProvider extends Component {
     dark: {
       text: "#ddd",
       bgPrimary: "rgba(0, 0, 0, 1)",
-      bgSecondary: "rgba(10,10,20,1)",
+      bgSecondary: "rgba(20,20,30,1)",
       accent: "rgba(153, 0, 51, 1)",
       accentSecondary: "rgba(255, 64, 0,1)",
-      showcaseInfoBg: "rgba(0,0,0,0.82)",
+      showcaseInfoBg: "rgba(0,0,0,0.6)",
       chartColor: [
         "rgba(0, 0, 153, 0)",
         "rgba(153, 0, 51, 0.5)",
