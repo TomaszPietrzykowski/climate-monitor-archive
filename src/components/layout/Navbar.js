@@ -13,29 +13,20 @@ const Navbar = () => {
       className="nav"
       style={{
         background: theme.bgPrimary,
-        color: theme.text,
-        padding: "0.2rem 0rem"
+        color: theme.text
       }}
     >
       <div className="container">
         <nav className="navbar">
           <div className="logo">
             <h3>
-              <FontAwesomeIcon
-                icon={faGlobeEurope}
-                style={{ fontSize: "1.5rem" }}
-              />
-              <span
-                style={{
-                  paddingLeft: "0.8rem",
-                  fontFamily: "Spartan, sans-serif"
-                }}
-              >
-                CLIMATE MONITOR
+              <span className="logoimg">
+                <FontAwesomeIcon icon={faGlobeEurope} />
               </span>
+              <span className="logotitle">CLIMATE MONITOR</span>
             </h3>
           </div>
-          <ul style={{ fontSize: "0.8rem" }}>
+          <ul>
             <li>
               <Link to="/" style={{ color: theme.text }}>
                 HOME

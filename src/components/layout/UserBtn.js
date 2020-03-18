@@ -11,10 +11,10 @@ const UserBtn = () => {
   const theme = isDarkMode ? dark : light
   return (
     <div
+      className="userbtn"
       style={{
         background: theme.bgPrimary,
-        color: theme.text,
-        minWidth: "40px"
+        color: theme.text
       }}
       onClick={logIn}
     >
