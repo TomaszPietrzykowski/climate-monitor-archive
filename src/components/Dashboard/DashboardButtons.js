@@ -82,14 +82,19 @@ const DashboardButtons = () => {
         <br />
         <p>Eye on the planet. Relax with NASA API's</p>
       </div>
-      <div className="dashboardbtn" style={{ background: theme.bgPrimary }}>
-        <h1 className="dashbooardicon" style={{ color: theme.accentSecondary }}>
-          <FontAwesomeIcon icon={faRss} />
-        </h1>
-        <h4>News</h4>
-        <br />
-        <p>Latest climate news feed.</p>
-      </div>
+      <Link to="/news" style={{ color: theme.text }}>
+        <div className="dashboardbtn" style={{ background: theme.bgPrimary }}>
+          <h1
+            className="dashbooardicon"
+            style={{ color: theme.accentSecondary }}
+          >
+            <FontAwesomeIcon icon={faRss} />
+          </h1>
+          <h4>News</h4>
+          <br />
+          <p>Latest climate news feed.</p>
+        </div>
+      </Link>
       <div className="dashboardbtn" style={{ background: theme.bgPrimary }}>
         <h1 className="dashbooardicon" style={{ color: theme.accentSecondary }}>
           <FontAwesomeIcon icon={faDatabase} />

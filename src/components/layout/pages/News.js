@@ -1,7 +1,7 @@
 import React from "react"
 import NewsFeed from "../../NewsFeed/NewsFeed"
 import "./News.css"
-import SectionHeader from "../layout/SectionHeader"
+import SectionHeader from "../SectionHeader"
 
 const News = () => {
   return (

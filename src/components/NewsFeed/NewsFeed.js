@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react"
 import NewsFeedSearch from "./NewsFeedSearch"
 import NewsFeedList from "./NewsFeedList"
-import SectionHeader from "../layout/SectionHeader"
+import Loader from "../layout/Loader"
 
 const NewsFeed = () => {
   const [loading, setLoading] = useState(true)
   const [news, setNews] = useState([])
-  const [querry, setQuerry] = useState("climate")
+  const [querry, setQuerry] = useState("climate+change")
   useEffect(() => {
     req(querry)
   }, [querry])
@@ -22,7 +22,7 @@ const NewsFeed = () => {
   return (
     <div>
       <NewsFeedSearch setQuerry={setQuerry} />
-      {loading ? "Loading data..." : <NewsFeedList news={news} />}
+      {loading ? <Loader /> : <NewsFeedList news={news} />}
     </div>
   )
 }

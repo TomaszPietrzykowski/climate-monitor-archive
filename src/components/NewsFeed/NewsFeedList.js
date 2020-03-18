@@ -11,6 +11,7 @@ const NewsFeedList = ({ news }) => {
           title={art.title}
           description={art.description}
           content={art.content}
+          source={art.source.name}
         />
       ))}
     </div>

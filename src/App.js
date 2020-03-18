@@ -7,6 +7,7 @@ import ThemeContexProvider from "./contexts/ThemeContext"
 import AuthContexProvider from "./contexts/AuthContext"
 import ChartContexProvider from "./contexts/ChartContext"
 import Carbon from "./components/layout/pages/Carbon"
+import News from "./components/layout/pages/News"
 import DatabaseContexProvider from "./contexts/DatabaseContext"
 import ScrollToTop from "./components/layout/ScrollToTop"
 
@@ -23,6 +24,7 @@ function App() {
                   <Switch>
                     <Route exact path="/" component={Home} />
                     <Route exact path="/co2" component={Carbon} />
+                    <Route exact path="/news" component={News} />
                   </Switch>
                 </ChartContexProvider>
               </ThemeContexProvider>

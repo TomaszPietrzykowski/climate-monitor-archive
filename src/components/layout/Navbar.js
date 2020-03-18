@@ -48,7 +48,11 @@ const Navbar = () => {
             </li>
             <li>TEMP</li>
             <li>MORE</li>
-            <li>NEWS</li>
+            <li>
+              <Link to="/news" style={{ color: theme.text }}>
+                NEWS
+              </Link>
+            </li>
             <li>
               <ThemeToggle />
             </li>
