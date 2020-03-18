@@ -10,7 +10,7 @@ const News = () => {
   return (
     <div style={{ background: theme.bgPrimary, color: theme.text }}>
       <div className="container">
-        <SectionHeader title="Latest News:" />
+        <SectionHeader title="Climate News" />
         <NewsFeed />
       </div>
     </div>
