@@ -135,6 +135,10 @@ input[type="text"] {
   font-size: 0.7rem;
   font-style: italic;
   margin: 0.5rem 0rem 0rem 2rem;
+  cursor: pointer;
+}
+.poweredby:hover {
+  opacity: 0.8;
 }
 
 .btncontainer {
