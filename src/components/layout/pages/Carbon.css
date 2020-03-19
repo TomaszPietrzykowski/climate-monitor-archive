@@ -1,11 +1,8 @@
 /* General Styles */
 
-/* Section Header Styles */
-
-.sectionheader {
-  font-size: 1.4rem;
-  padding: 0.5rem;
-  margin: 3rem 2rem 4rem 2rem;
+.carbonflexparent {
+  display: flex;
+  margin-top: 6rem;
 }
 
 /* Chart Header Styles */
@@ -213,12 +210,6 @@
   .container {
     padding: 0;
     margin: 0;
-  }
-
-  .sectionheader {
-    font-size: 1.2rem;
-    text-align: center;
-    margin: 1.6rem 0;
   }
 
   .chartheader {

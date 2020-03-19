@@ -8,7 +8,13 @@ const News = () => {
   const { isDarkMode, light, dark } = useContext(ThemeContext)
   const theme = isDarkMode ? dark : light
   return (
-    <div style={{ background: theme.bgPrimary, color: theme.text }}>
+    <div
+      style={{
+        background: theme.bgPrimary,
+        color: theme.text,
+        borderTop: `1px solid ${theme.text}`
+      }}
+    >
       <div className="container">
         <SectionHeader title="Climate News" />
         <NewsFeed />

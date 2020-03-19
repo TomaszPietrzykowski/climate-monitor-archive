@@ -21,6 +21,16 @@ const NewsFeed = () => {
   }
   return (
     <div>
+      <div className="poweredby">
+        Powered by{" "}
+        <a
+          href="https://newsapi.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          NewsAPI.org
+        </a>
+      </div>
       <NewsFeedSearch setQuerry={setQuerry} />
       {loading ? <Loader /> : <NewsFeedList news={news} />}
     </div>

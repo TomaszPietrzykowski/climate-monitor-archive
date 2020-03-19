@@ -1,6 +1,7 @@
 import React, { useContext } from "react"
 import NewsThumbnail from "./NewsThumbnail"
 import { ThemeContext } from "../../contexts/ThemeContext"
+import { v4 as uuidv4 } from "uuid"
 
 const NewsFeedList = ({ news }) => {
   const { isDarkMode, dark, light } = useContext(ThemeContext)
@@ -9,6 +10,7 @@ const NewsFeedList = ({ news }) => {
     <div className="newsfeedlist" style={{ background: theme.bgSecondary }}>
       {news.map(art => (
         <NewsThumbnail
+          key={uuidv4()}
           url={art.url}
           img={art.urlToImage}
           title={art.title}

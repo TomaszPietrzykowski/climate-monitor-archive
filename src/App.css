@@ -85,6 +85,28 @@ img {
   min-width: 40px;
 }
 
+/* Section Header Styles   -------------------------------------------   */
+
+.sectionheader {
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  margin: 3rem 2rem 0rem 2rem;
+}
+
+@media (max-width: 720px) {
+  .sectionheader {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 1.6rem 0rem 0rem 0rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .sectionheader {
+    font-size: 1.2rem;
+  }
+}
+
 /* Loader Component Styles  ----------------------------------------------------------  */
 
 .loader {
@@ -96,8 +118,8 @@ img {
 }
 
 .loader img {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
 }
 
 /* Mobile Styles > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > */

@@ -18,19 +18,7 @@ const NewsThumbnail = ({ img, url, title, description, content, source }) => {
         <div className="newstitle">{title}</div>
         <div className="newsdescription">{description}</div>
         <div className="newscontent">{content}</div>
-        <div className="badges">
-          <div className="poweredby">
-            powered by:{" "}
-            <a
-              href="https://newsapi.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              News API
-            </a>{" "}
-          </div>
-          <div className="newssource">source: {source}</div>
-        </div>
+        <div className="newssource">source: {source}</div>
         <div className="btncontainer">
           <div
             className="readmorebtn"

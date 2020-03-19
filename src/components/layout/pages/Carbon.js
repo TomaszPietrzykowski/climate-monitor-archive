@@ -44,7 +44,7 @@ const Carbon = () => {
     >
       <div className="container">
         <SectionHeader title={"Carbon Dioxide CO2"} />
-        <div style={{ display: "flex", marginTop: "1.5rem" }}>
+        <div className="carbonflexparent">
           <div className="carbonmenu">
             <CarbonMenu active={activeTab} setTab={setTab} />
           </div>
