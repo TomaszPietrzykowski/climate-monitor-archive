@@ -1,18 +1,21 @@
 import React, { useState, useContext } from "react"
 import { ThemeContext } from "../../contexts/ThemeContext"
 
-const NewsFeedSearch = ({ setQuerry }) => {
+const NewsFeedSearch = ({ setQuerry, setResultsFor }) => {
   const [text, setText] = useState("")
   const { isDarkMode, dark, light } = useContext(ThemeContext)
   const theme = isDarkMode ? dark : light
   const handleSubmit = e => {
-    setQuerry(text)
-    setText("")
+    if (text !== "") {
+      setResultsFor(text)
+      const string = text.replace(/ /g, "+")
+      setQuerry(string)
+      setText("")
+    }
     e.preventDefault()
   }
   const handleChange = e => {
     setText(e.target.value)
-    console.log(text)
   }
   return (
     <div className="searchcontainer">

@@ -1,12 +1,16 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useContext } from "react"
 import NewsFeedSearch from "./NewsFeedSearch"
 import NewsFeedList from "./NewsFeedList"
 import Loader from "../layout/Loader"
+import { ThemeContext } from "../../contexts/ThemeContext"
 
 const NewsFeed = () => {
+  const { isDarkMode, dark, light } = useContext(ThemeContext)
+  const theme = isDarkMode ? dark : light
   const [loading, setLoading] = useState(true)
   const [news, setNews] = useState([])
-  const [querry, setQuerry] = useState("climate+change")
+  const [querry, setQuerry] = useState("climate+change+warming")
+  const [resultsFor, setResultsFor] = useState("")
   useEffect(() => {
     req(querry)
   }, [querry])
@@ -20,7 +24,10 @@ const NewsFeed = () => {
     setLoading(false)
   }
   return (
-    <div>
+    <div
+      className="newsfeedcontainer"
+      style={{ background: theme.bgPrimary, color: theme.text }}
+    >
       <div className="poweredby">
         Powered by{" "}
         <a
@@ -31,8 +38,12 @@ const NewsFeed = () => {
           NewsAPI.org
         </a>
       </div>
-      <NewsFeedSearch setQuerry={setQuerry} />
-      {loading ? <Loader /> : <NewsFeedList news={news} />}
+      <NewsFeedSearch setQuerry={setQuerry} setResultsFor={setResultsFor} />
+      {loading ? (
+        <Loader />
+      ) : (
+        <NewsFeedList news={news} resultsFor={resultsFor} />
+      )}
     </div>
   )
 }
