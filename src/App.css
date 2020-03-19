@@ -3,9 +3,10 @@
 /* Currently imported fonts:
 /* Exo 2
 /* Spartan  
+/* Roboto
 */
 
-/* Global Styles  ----------------------------------------- */
+/* Global Styles  -------------------------------------------------------- */
 
 * {
   box-sizing: border-box;
@@ -39,7 +40,7 @@ img {
   padding: 0 2rem;
 }
 
-/* Navbar     ------------------------------------------- */
+/* Navbar     ------------------------------------------------------- */
 
 .nav {
   padding: 0.2rem 0;
@@ -84,7 +85,7 @@ img {
   min-width: 40px;
 }
 
-/* Loader Component Styles */
+/* Loader Component Styles  ----------------------------------------------------------  */
 
 .loader {
   min-height: 50vh;
@@ -99,7 +100,7 @@ img {
   height: 70px;
 }
 
-/* Mobile Styles ----------------------------------------------------- */
+/* Mobile Styles > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > */
 @media (max-width: 720px) {
   /* Navbar */
   .navbar {
