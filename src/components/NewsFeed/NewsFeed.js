@@ -20,8 +20,18 @@ const NewsFeed = () => {
       `http://newsapi.org/v2/everything?q=${querry}&language=en&sortBy=publishedAt&apiKey=${process.env.REACT_APP_NEWSAPI_API_KEY}`
     )
     const data = await res.json()
-    setNews(data.articles)
-    setLoading(false)
+    if (data.status === "ok") {
+      if (data.articles.length > 0) {
+        setNews(data.articles)
+        setLoading(false)
+      } else {
+        setQuerry("atmospheric+co2+climate+change")
+      }
+    } else {
+      // error handling here
+      console.log(data.status, data.message)
+      setQuerry("atmospheric+co2+climate+change")
+    }
   }
   return (
     <div
